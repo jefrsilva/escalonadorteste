@@ -1,0 +1,31 @@
+import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
+
+import br.com.caelum.escalonadorteste.modelo.Configuracao
+import br.com.caelum.escalonadorteste.modelo.Turma
+import br.com.caelum.escalonadorteste.modelo.Instrutor
+
+global HardSoftScoreHolder scoreHolder;
+
+rule "não sabe dar o curso"
+    when
+    	$turma : Turma(instrutor != null, !instrutor.consegueMinistrar($turma))
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -10);
+end
+
+rule "pegou mais aulas do que deveria"
+	when
+		$config : Configuracao()
+		$instrutor : Instrutor()
+		Number(intValue > $config.numeroMaximoDeAulasPorInstrutor) from accumulate(Turma(instrutor == $instrutor); count(1)) 
+	then
+		scoreHolder.addSoftConstraintMatch(kcontext, -10);
+end
+
+rule "data de um curso conflita com outro"
+	when
+		$umaTurma : Turma($instrutor : instrutor != null)
+		$outraTurma : Turma($umaTurma != $outraTurma, instrutor == $instrutor, conflitaCom($umaTurma))
+	then
+		scoreHolder.addHardConstraintMatch(kcontext, -10);
+end

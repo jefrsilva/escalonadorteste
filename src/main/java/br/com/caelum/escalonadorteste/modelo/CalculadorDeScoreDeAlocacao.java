@@ -32,6 +32,7 @@ public class CalculadorDeScoreDeAlocacao implements EasyScoreCalculator<Alocacao
 
 		int min = Integer.MAX_VALUE;
 		int max = Integer.MIN_VALUE;
+		
 		for (int value : turmasMinistradas.values()) {
 			min = Math.min(min, value);
 			max = Math.max(max, value);

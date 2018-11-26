@@ -7,20 +7,24 @@ import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
 import org.optaplanner.core.api.domain.solution.PlanningScore;
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
 import org.optaplanner.core.api.domain.solution.drools.ProblemFactCollectionProperty;
+import org.optaplanner.core.api.domain.solution.drools.ProblemFactProperty;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 
 @PlanningSolution
 public class Alocacao {
+
 	private HardSoftScore score;
 	private List<Instrutor> instrutores = new ArrayList<>();
+	private Configuracao config;
 
 	public Alocacao() {
 	}
-	
-	public Alocacao(List<Turma> turmas, List<Instrutor> instrutores) {
+
+	public Alocacao(List<Turma> turmas, List<Instrutor> instrutores, int numeroMaximoDeAulasPorInstrutor) {
 		this.turmas = turmas;
 		this.instrutores = instrutores;
+		this.config = new Configuracao(numeroMaximoDeAulasPorInstrutor);
 	}
 
 	@PlanningEntityCollectionProperty
@@ -36,6 +40,11 @@ public class Alocacao {
 		return instrutores;
 	}
 
+	@ProblemFactProperty
+	public Configuracao getConfiguracao() {
+		return config;
+	}
+
 	@PlanningScore
 	public HardSoftScore getScore() {
 		return score;
@@ -44,4 +53,5 @@ public class Alocacao {
 	public void setScore(HardSoftScore score) {
 		this.score = score;
 	}
+
 }
