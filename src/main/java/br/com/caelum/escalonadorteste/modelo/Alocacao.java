@@ -21,10 +21,11 @@ public class Alocacao {
 	public Alocacao() {
 	}
 
-	public Alocacao(List<Turma> turmas, List<Instrutor> instrutores, int numeroMaximoDeAulasPorInstrutor) {
+	public Alocacao(List<Turma> turmas, List<Instrutor> instrutores, int numeroMaximoDeAulasPorInstrutor,
+			int numeroMaximoDeTurmasSeguidas) {
 		this.turmas = turmas;
 		this.instrutores = instrutores;
-		this.config = new Configuracao(numeroMaximoDeAulasPorInstrutor);
+		this.config = new Configuracao(numeroMaximoDeAulasPorInstrutor, numeroMaximoDeTurmasSeguidas);
 	}
 
 	@PlanningEntityCollectionProperty

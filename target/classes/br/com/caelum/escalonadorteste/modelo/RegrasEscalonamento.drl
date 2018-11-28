@@ -1,10 +1,16 @@
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
 
+import java.time.LocalDate;
+
 import br.com.caelum.escalonadorteste.modelo.Configuracao
 import br.com.caelum.escalonadorteste.modelo.Turma
 import br.com.caelum.escalonadorteste.modelo.Instrutor
 
 global HardSoftScoreHolder scoreHolder;
+
+function boolean dataEstaNoIntervalo(LocalDate data, LocalDate inicio, LocalDate fim) {
+	return  (data.equals(inicio) || data.equals(fim) || (data.isAfter(inicio) && data.isBefore(fim)));
+}
 
 rule "não sabe dar o curso"
     when
@@ -28,4 +34,37 @@ rule "data de um curso conflita com outro"
 		$outraTurma : Turma($umaTurma != $outraTurma, instrutor == $instrutor, conflitaCom($umaTurma))
 	then
 		scoreHolder.addHardConstraintMatch(kcontext, -10);
+end
+
+rule "mais de X turmas seguidas"
+	when
+		$config : Configuracao()
+		$instrutor : Instrutor()
+		Number(intValue > $config.numeroMaximoDeTurmasSeguidas) from
+			accumulate( 
+				$turma : Turma( instrutor == $instrutor ),
+				init(
+					System.out.println("**************** Novo começo"); 
+					int turmasSeguidas = 0;
+					int maxTurmasSeguidas = 0;
+					LocalDate ultimaDataInicio = LocalDate.of(1990,1,1);
+					LocalDate ultimaDataTermino = LocalDate.of(1990,1,1);
+				),
+				action(
+					System.out.println("Init ============= " + $turma.getDataDeInicio());
+					if (dataEstaNoIntervalo($turma.getDataDeInicio().minusWeeks(1), ultimaDataInicio, ultimaDataTermino)) {
+						turmasSeguidas++;
+					} else {
+						turmasSeguidas = 1;
+					}
+					maxTurmasSeguidas = Math.max(maxTurmasSeguidas, turmasSeguidas);
+					ultimaDataInicio = $turma.getDataDeInicio();
+					ultimaDataTermino = $turma.getDataDeTermino();
+				),
+				result(
+					maxTurmasSeguidas
+				) 
+			);
+	then
+		scoreHolder.addSoftConstraintMatch(kcontext, -10);	
 end
