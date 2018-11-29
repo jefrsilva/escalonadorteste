@@ -15,7 +15,7 @@ import br.com.caelum.escalonadorteste.modelo.Turma;
 public class Escalonador {
 	public static void main(String[] args) {
 		SolverFactory<Alocacao> solverFactory = SolverFactory
-				.createFromXmlResource("br/com/caelum/escalonadorteste/alocacaoSolverConfig.xml");
+				.createFromXmlResource("br/com/caelum/escalonadorteste/conf/alocacaoSolverConfig.xml");
 
 		Solver<Alocacao> solver = solverFactory.buildSolver();
 
