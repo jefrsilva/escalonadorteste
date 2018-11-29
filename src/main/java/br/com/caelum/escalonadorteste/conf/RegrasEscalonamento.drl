@@ -6,11 +6,9 @@ import br.com.caelum.escalonadorteste.modelo.Configuracao
 import br.com.caelum.escalonadorteste.modelo.Turma
 import br.com.caelum.escalonadorteste.modelo.Instrutor
 
-global HardSoftScoreHolder scoreHolder;
+import java.util.ArrayList;
 
-function boolean dataEstaNoIntervalo(LocalDate data, LocalDate inicio, LocalDate fim) {
-	return  (data.equals(inicio) || data.equals(fim) || (data.isAfter(inicio) && data.isBefore(fim)));
-}
+global HardSoftScoreHolder scoreHolder;
 
 rule "não sabe dar o curso"
     when
@@ -41,30 +39,7 @@ rule "mais de X turmas seguidas"
 		$config : Configuracao()
 		$instrutor : Instrutor()
 		Number(intValue > $config.numeroMaximoDeTurmasSeguidas) from
-			accumulate( 
-				$turma : Turma( instrutor == $instrutor ),
-				init(
-					System.out.println("**************** Novo começo"); 
-					int turmasSeguidas = 0;
-					int maxTurmasSeguidas = 0;
-					LocalDate ultimaDataInicio = LocalDate.of(1990,1,1);
-					LocalDate ultimaDataTermino = LocalDate.of(1990,1,1);
-				),
-				action(
-					System.out.println("Init ============= " + $turma.getDataDeInicio());
-					if (dataEstaNoIntervalo($turma.getDataDeInicio().minusWeeks(1), ultimaDataInicio, ultimaDataTermino)) {
-						turmasSeguidas++;
-					} else {
-						turmasSeguidas = 1;
-					}
-					maxTurmasSeguidas = Math.max(maxTurmasSeguidas, turmasSeguidas);
-					ultimaDataInicio = $turma.getDataDeInicio();
-					ultimaDataTermino = $turma.getDataDeTermino();
-				),
-				result(
-					maxTurmasSeguidas
-				) 
-			);
+			accumulate($turma : Turma(instrutor == $instrutor), maximoDeTurmasSeguidas($turma))
 	then
 		scoreHolder.addSoftConstraintMatch(kcontext, -10);	
 end

@@ -30,7 +30,7 @@ public class Escalonador {
 		instrutores.add(new Instrutor("Instrutor B", Arrays.asList("Curso 1", "Curso 2")));
 		//instrutores.add(new Instrutor("Instrutor C", Arrays.asList("Curso 1", "Curso 2")));
 
-		Alocacao alocacaoNaoResolvida = new Alocacao(turmas, instrutores, 10, 2);
+		Alocacao alocacaoNaoResolvida = new Alocacao(turmas, instrutores, 2, 2);
 		Alocacao alocacao = solver.solve(alocacaoNaoResolvida);
 
 		for (Turma turma : alocacao.getTurmas()) {
