@@ -11,14 +11,18 @@ public class Turma {
 	private Instrutor instrutor;
 	private LocalDate dataDeInicio;
 	private LocalDate dataDeTermino;
+	private int cargaHoraria;
+	private Periodo periodo;
 
 	public Turma() {
 	}
 
-	public Turma(String codigoDoCurso, LocalDate dataDeInicio, LocalDate dataDeTermino) {
+	public Turma(String codigoDoCurso, LocalDate dataDeInicio, LocalDate dataDeTermino, int cargaHoraria, Periodo periodo) {
 		this.codigoDoCurso = codigoDoCurso;
 		this.dataDeInicio = dataDeInicio;
 		this.dataDeTermino = dataDeTermino;
+		this.cargaHoraria = cargaHoraria;
+		this.periodo = periodo;
 	}
 
 	public String getCodigoDoCurso() {
@@ -33,6 +37,14 @@ public class Turma {
 		return dataDeTermino;
 	}
 
+	public int getCargaHoraria() {
+		return cargaHoraria;
+	}
+
+	public Periodo getPeriodo() {
+		return periodo;
+	}
+	
 	@PlanningVariable(valueRangeProviderRefs = "listaDeInstrutores")
 	public Instrutor getInstrutor() {
 		return instrutor;
@@ -41,13 +53,13 @@ public class Turma {
 	public void setInstrutor(Instrutor instrutor) {
 		this.instrutor = instrutor;
 	}
-
+	
 	@Override
 	public String toString() {
 		return codigoDoCurso + " - " + instrutor.getNome();
 	}
 
-	public boolean conflitaCom(Turma turma) {
+	public boolean dataConflitaCom(Turma turma) {
 		return !(turma.getDataDeInicio().isAfter(this.dataDeTermino)
 				|| turma.getDataDeTermino().isBefore(this.dataDeInicio));
 	}

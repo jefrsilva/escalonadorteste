@@ -12,24 +12,32 @@ global HardSoftScoreHolder scoreHolder;
 
 rule "não sabe dar o curso"
     when
-    	$turma : Turma(instrutor != null, !instrutor.consegueMinistrar($turma))
+    	Turma(instrutor != null, !instrutor.sabeDarOCurso(this))
     then
         scoreHolder.addHardConstraintMatch(kcontext, -10);
 end
 
-rule "pegou mais aulas do que deveria"
+rule "não consegue dar aula no período"
+    when
+    	Turma(instrutor != null, !instrutor.consegueDarAulaNoPeriodo(this))
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -10);
+end
+
+rule "mais de X horas de aula"
 	when
 		$config : Configuracao()
 		$instrutor : Instrutor()
-		Number(intValue > $config.numeroMaximoDeAulasPorInstrutor) from accumulate(Turma(instrutor == $instrutor); count(1)) 
+		Number(intValue > $config.numeroMaximoDeHorasPorInstrutor) from 
+			accumulate($turma : Turma(instrutor == $instrutor); sum($turma.getCargaHoraria())) 
 	then
 		scoreHolder.addSoftConstraintMatch(kcontext, -10);
 end
 
 rule "data de um curso conflita com outro"
 	when
-		$umaTurma : Turma($instrutor : instrutor != null)
-		$outraTurma : Turma($umaTurma != $outraTurma, instrutor == $instrutor, conflitaCom($umaTurma))
+		$outraTurma : Turma($instrutor : instrutor != null)
+		Turma($outraTurma != this, instrutor == $instrutor, dataConflitaCom($outraTurma))
 	then
 		scoreHolder.addHardConstraintMatch(kcontext, -10);
 end
@@ -43,3 +51,4 @@ rule "mais de X turmas seguidas"
 	then
 		scoreHolder.addSoftConstraintMatch(kcontext, -10);	
 end
+

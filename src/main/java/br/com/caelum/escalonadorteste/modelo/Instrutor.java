@@ -5,10 +5,12 @@ import java.util.List;
 public class Instrutor {
 	private String nome;
 	private List<String> turmasViaveis;
+	private List<Periodo> periodosViaveis;
 
-	public Instrutor(String nome, List<String> turmasViaveis) {
+	public Instrutor(String nome, List<String> turmasViaveis, List<Periodo> periodosViaveis) {
 		this.nome = nome;
 		this.turmasViaveis = turmasViaveis;
+		this.periodosViaveis = periodosViaveis;
 	}
 
 	@Override
@@ -40,7 +42,11 @@ public class Instrutor {
 		return nome;
 	}
 
-	public boolean consegueMinistrar(Turma turma) {
+	public boolean sabeDarOCurso(Turma turma) {
 		return turmasViaveis.contains(turma.getCodigoDoCurso());
+	}
+
+	public boolean consegueDarAulaNoPeriodo(Turma turma) {
+		return periodosViaveis.contains(turma.getPeriodo());
 	}
 }
