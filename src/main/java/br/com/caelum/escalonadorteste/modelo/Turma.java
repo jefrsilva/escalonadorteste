@@ -8,6 +8,7 @@ import org.optaplanner.core.api.domain.variable.PlanningVariable;
 @PlanningEntity
 public class Turma {
 	private String codigoDoCurso;
+	private Instrutor instrutorFixo;
 	private Instrutor instrutor;
 	private LocalDate dataDeInicio;
 	private LocalDate dataDeTermino;
@@ -52,6 +53,14 @@ public class Turma {
 
 	public void setInstrutor(Instrutor instrutor) {
 		this.instrutor = instrutor;
+	}
+	
+	public Instrutor getInstrutorFixo() {
+		return instrutorFixo;
+	}
+	
+	public void setInstrutorFixo(Instrutor instrutorFixo) {
+		this.instrutorFixo = instrutorFixo;
 	}
 	
 	@Override

@@ -47,8 +47,14 @@ rule "mais de X turmas seguidas"
 		$config : Configuracao()
 		$instrutor : Instrutor()
 		Number(intValue > $config.numeroMaximoDeTurmasSeguidas) from
-			accumulate($turma : Turma(instrutor == $instrutor), maximoDeTurmasSeguidas($turma))
+			accumulate($turma : Turma(instrutor == $instrutor); maximoDeTurmasSeguidas($turma))
 	then
 		scoreHolder.addSoftConstraintMatch(kcontext, -10);	
 end
 
+rule "instrutor fixado foi trocado"
+	when
+		Turma(instrutorFixo != null, instrutorFixo != instrutor)
+	then
+		scoreHolder.addSoftConstraintMatch(kcontext, -1000);
+end

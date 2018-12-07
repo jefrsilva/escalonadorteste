@@ -30,7 +30,7 @@ public class Alocacao {
 
 	@PlanningEntityCollectionProperty
 	private List<Turma> turmas = new ArrayList<>();
-	
+
 	public List<Turma> getTurmas() {
 		return turmas;
 	}

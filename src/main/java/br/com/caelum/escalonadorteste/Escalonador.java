@@ -20,18 +20,37 @@ public class Escalonador {
 
 		Solver<Alocacao> solver = solverFactory.buildSolver();
 
-		List<Turma> turmas = new ArrayList<>();
-		turmas.add(new Turma("Curso 1", LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 30), 40, Periodo.INTEGRAL));
-		turmas.add(new Turma("Curso 1", LocalDate.of(2018, 12, 3), LocalDate.of(2018, 12, 7), 40, Periodo.INTEGRAL));
-		turmas.add(new Turma("Curso 1", LocalDate.of(2018, 12, 10), LocalDate.of(2018, 12, 14), 40, Periodo.INTEGRAL));
-		turmas.add(new Turma("Curso 1", LocalDate.of(2018, 12, 17), LocalDate.of(2018, 12, 21), 40, Periodo.INTEGRAL));
+		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1", "Curso 2"),
+				Arrays.asList(Periodo.INTEGRAL));
+		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1", "Curso 2"),
+				Arrays.asList(Periodo.INTEGRAL, Periodo.NOTURNO));
+		Instrutor instrutor3 = new Instrutor("Instrutor C", Arrays.asList("Curso 1", "Curso 2"),
+				Arrays.asList(Periodo.INTEGRAL, Periodo.NOTURNO));
 
 		List<Instrutor> instrutores = new ArrayList<>();
-		instrutores.add(new Instrutor("Instrutor A", Arrays.asList("Curso 1", "Curso 2"), Arrays.asList(Periodo.INTEGRAL)));
-		instrutores.add(new Instrutor("Instrutor B", Arrays.asList("Curso 1", "Curso 2"), Arrays.asList(Periodo.INTEGRAL, Periodo.NOTURNO)));
-		//instrutores.add(new Instrutor("Instrutor C", Arrays.asList("Curso 1", "Curso 2")));
+		instrutores.add(instrutor1);
+		instrutores.add(instrutor2);
+		instrutores.add(instrutor3);
 
-		Alocacao alocacaoNaoResolvida = new Alocacao(turmas, instrutores, 80, 2);
+		List<Turma> turmas = new ArrayList<>();
+		Turma turma1 = new Turma("Curso 1", LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 30), 40,
+				Periodo.INTEGRAL);
+		turma1.setInstrutorFixo(instrutor2);
+		Turma turma2 = new Turma("Curso 1", LocalDate.of(2018, 12, 3), LocalDate.of(2018, 12, 7), 40, Periodo.INTEGRAL);
+		turma2.setInstrutorFixo(instrutor1);
+		Turma turma3 = new Turma("Curso 1", LocalDate.of(2018, 12, 10), LocalDate.of(2018, 12, 14), 40,
+				Periodo.INTEGRAL);
+		// turma3.setInstrutorFixo(instrutor1);
+		Turma turma4 = new Turma("Curso 1", LocalDate.of(2018, 12, 17), LocalDate.of(2018, 12, 21), 40,
+				Periodo.INTEGRAL);
+		turma4.setInstrutorFixo(instrutor2);
+
+		turmas.add(turma1);
+		turmas.add(turma2);
+		turmas.add(turma3);
+		turmas.add(turma4);
+
+		Alocacao alocacaoNaoResolvida = new Alocacao(turmas, instrutores, 80, 1);
 		Alocacao alocacao = solver.solve(alocacaoNaoResolvida);
 
 		for (Turma turma : alocacao.getTurmas()) {
