@@ -10,6 +10,13 @@
   </scoreDirectorFactory>
 
   <!-- Optimization algorithms configuration -->
+  <constructionHeuristic>
+    <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+  </constructionHeuristic>
+  <localSearch>
+    <localSearchType>LATE_ACCEPTANCE</localSearchType>
+  </localSearch>
+  
   <termination>
     <secondsSpentLimit>5</secondsSpentLimit>
   </termination>

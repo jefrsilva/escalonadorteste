@@ -4,13 +4,25 @@ import java.util.List;
 
 public class Instrutor {
 	private String nome;
-	private List<String> turmasViaveis;
+	private List<String> cursosConhecidos;
 	private List<Periodo> periodosViaveis;
 
-	public Instrutor(String nome, List<String> turmasViaveis, List<Periodo> periodosViaveis) {
+	public Instrutor(String nome, List<String> cursosConhecidos, List<Periodo> periodosViaveis) {
 		this.nome = nome;
-		this.turmasViaveis = turmasViaveis;
+		this.cursosConhecidos = cursosConhecidos;
 		this.periodosViaveis = periodosViaveis;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public boolean sabeDarOCurso(Turma turma) {
+		return cursosConhecidos.contains(turma.getCodigoDoCurso());
+	}
+
+	public boolean consegueDarAulaNoPeriodo(Turma turma) {
+		return periodosViaveis.contains(turma.getPeriodo());
 	}
 
 	@Override
@@ -36,17 +48,5 @@ public class Instrutor {
 		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public boolean sabeDarOCurso(Turma turma) {
-		return turmasViaveis.contains(turma.getCodigoDoCurso());
-	}
-
-	public boolean consegueDarAulaNoPeriodo(Turma turma) {
-		return periodosViaveis.contains(turma.getPeriodo());
 	}
 }

@@ -1,11 +1,11 @@
 package br.com.caelum.escalonadorteste.modelo;
 
-public class Configuracao {
+public class ParametrosDeEscalonamento {
 
 	private int numeroMaximoDeHorasPorInstrutor;
 	private int numeroMaximoDeTurmasSeguidas;
 
-	public Configuracao(int numeroMaximoDeHorasPorInstrutor, int numeroMaximoDeTurmasSeguidas) {
+	public ParametrosDeEscalonamento(int numeroMaximoDeHorasPorInstrutor, int numeroMaximoDeTurmasSeguidas) {
 		this.numeroMaximoDeHorasPorInstrutor = numeroMaximoDeHorasPorInstrutor;
 		this.numeroMaximoDeTurmasSeguidas = numeroMaximoDeTurmasSeguidas;
 	}

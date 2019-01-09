@@ -1,4 +1,4 @@
-package br.com.caelum.escalonadorteste.modelo;
+package br.com.caelum.escalonadorteste.alocacao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,21 +11,26 @@ import org.optaplanner.core.api.domain.solution.drools.ProblemFactProperty;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 
+import br.com.caelum.escalonadorteste.modelo.Instrutor;
+import br.com.caelum.escalonadorteste.modelo.ParametrosDeEscalonamento;
+import br.com.caelum.escalonadorteste.modelo.Turma;
+
 @PlanningSolution
-public class Alocacao {
+public class AlocacaoDeInstrutores {
 
 	private HardSoftScore score;
 	private List<Instrutor> instrutores = new ArrayList<>();
-	private Configuracao config;
+	private ParametrosDeEscalonamento parametrosDeEscalonamento;
 
-	public Alocacao() {
+	public AlocacaoDeInstrutores() {
 	}
 
-	public Alocacao(List<Turma> turmas, List<Instrutor> instrutores, int numeroMaximoDeAulasPorInstrutor,
+	public AlocacaoDeInstrutores(List<Turma> turmas, List<Instrutor> instrutores, int numeroMaximoDeAulasPorInstrutor,
 			int numeroMaximoDeTurmasSeguidas) {
 		this.turmas = turmas;
 		this.instrutores = instrutores;
-		this.config = new Configuracao(numeroMaximoDeAulasPorInstrutor, numeroMaximoDeTurmasSeguidas);
+		this.parametrosDeEscalonamento = new ParametrosDeEscalonamento(numeroMaximoDeAulasPorInstrutor,
+				numeroMaximoDeTurmasSeguidas);
 	}
 
 	@PlanningEntityCollectionProperty
@@ -42,8 +47,8 @@ public class Alocacao {
 	}
 
 	@ProblemFactProperty
-	public Configuracao getConfiguracao() {
-		return config;
+	public ParametrosDeEscalonamento getParametrosDeEscalonamento() {
+		return parametrosDeEscalonamento;
 	}
 
 	@PlanningScore
