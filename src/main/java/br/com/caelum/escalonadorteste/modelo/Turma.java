@@ -17,6 +17,7 @@ public class Turma {
 	private String codigoCurso;
 	private Periodo periodo;
 	private List<Aula> aulas;
+	private boolean ehViagem;
 
 	private Instrutor instrutor;
 	private Instrutor instrutorPlanejado;
@@ -27,9 +28,10 @@ public class Turma {
 
 	@JsonCreator
 	public Turma(@JsonProperty("codigoCurso") String codigoCurso, @JsonProperty("periodo") Periodo periodo,
-			@JsonProperty("diasDeAula") List<LocalDate> diasDeAula) {
+			@JsonProperty("diasDeAula") List<LocalDate> diasDeAula, @JsonProperty("ehViagem") boolean ehViagem) {
 		this.codigoCurso = codigoCurso;
 		this.periodo = periodo;
+		this.ehViagem = ehViagem;
 		this.aulas = diasDeAula.stream().map(dia -> new Aula(dia.atTime(this.periodo.getHoraDeInicio()),
 				dia.atTime(this.periodo.getHoraDeTermino()))).collect(Collectors.toList());
 		this.aulas.sort((umaData, outraData) -> umaData.getInstanteInicial().compareTo(outraData.getInstanteInicial()));
@@ -45,6 +47,10 @@ public class Turma {
 
 	public List<Aula> getAulas() {
 		return aulas;
+	}
+	
+	public boolean ehViagem() {
+		return ehViagem;
 	}
 
 	public LocalDate getDataDeInicio() {

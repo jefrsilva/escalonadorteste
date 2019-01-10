@@ -59,3 +59,10 @@ rule "instrutor planejado foi trocado"
 	then
 		scoreHolder.addSoftConstraintMatch(kcontext, -1);
 end
+
+rule "instrutor não está disponível para viagem"
+	when
+		Turma(instrutor != null, ehViagem, !instrutor.estaDisponivelParaViagem())
+	then
+		scoreHolder.addHardConstraintMatch(kcontext, -10); 		
+end
