@@ -8,6 +8,7 @@ import org.optaplanner.core.api.solver.SolverFactory;
 import br.com.caelum.escalonadorteste.alocacao.AlocacaoDeInstrutores;
 import br.com.caelum.escalonadorteste.helper.CursosHelper;
 import br.com.caelum.escalonadorteste.helper.InstrutoresHelper;
+import br.com.caelum.escalonadorteste.helper.JSONHelper;
 import br.com.caelum.escalonadorteste.helper.TurmasHelper;
 import br.com.caelum.escalonadorteste.modelo.Curso;
 import br.com.caelum.escalonadorteste.modelo.Instrutor;
@@ -21,25 +22,25 @@ public class Escalonador {
 	private int cargaHorariaMaximaPorInstrutor;
 	private int maximoDeTurmasSeguidasPorInstrutor;
 
+	public Escalonador(List<Curso> cursos, List<Instrutor> instrutores, List<Turma> turmas,
+			int cargaHorariaMaximaPorInstrutor, int maximoDeTurmasSeguidasPorInstrutor) {
+		this.cursos = cursos;
+		this.instrutores = instrutores;
+		this.turmas = turmas;
+		this.cargaHorariaMaximaPorInstrutor = cargaHorariaMaximaPorInstrutor;
+		this.maximoDeTurmasSeguidasPorInstrutor = maximoDeTurmasSeguidasPorInstrutor;
+	}
+
 	public void setTurmas(List<Turma> turmas) {
 		this.turmas = turmas;
-		for (Turma turma : turmas) {
-			System.out.println(turma);
-		}
 	}
 
 	public void setInstrutores(List<Instrutor> instrutores) {
 		this.instrutores = instrutores;
-		for (Instrutor instrutor : instrutores) {
-			System.out.println(instrutor);
-		}
 	}
 
 	public void setCursos(List<Curso> cursos) {
 		this.cursos = cursos;
-		for (Curso curso : cursos) {
-			System.out.println(curso);
-		}
 	}
 
 	public void setCargaHorariaMaximaPorInstrutor(int cargaHoraria) {
@@ -51,25 +52,16 @@ public class Escalonador {
 	}
 
 	public static void main(String[] args) {
-		Escalonador escalonador = new Escalonador();
+		JSONHelper jsonHelper = new JSONHelper();
+		String jsonInstrutores = jsonHelper.carregaRecursoJSON("instrutores.json");
+		String jsonCursos = jsonHelper.carregaRecursoJSON("cursos.json");
+		String jsonTurmas = jsonHelper.carregaRecursoJSON("turmas.json");
 
-		InstrutoresHelper instrutoresHelper = new InstrutoresHelper();
-		String jsonInstrutores = instrutoresHelper.carregaRecursoJSON("instrutores.json");
-		List<Instrutor> instrutores = instrutoresHelper.constroiListaAPartirDeJSON(jsonInstrutores);
-		escalonador.setInstrutores(instrutores);
+		List<Curso> cursos = new CursosHelper().constroiListaAPartirDeJSON(jsonCursos);
+		List<Instrutor> instrutores = new InstrutoresHelper().constroiListaAPartirDeJSON(jsonInstrutores);
+		List<Turma> turmas = new TurmasHelper().constroiListaAPartirDeJSON(jsonTurmas);
 
-		CursosHelper cursosHelper = new CursosHelper();
-		String jsonCursos = cursosHelper.carregaRecursoJSON("cursos.json");
-		List<Curso> cursos = cursosHelper.constroiListaAPartirDeJSON(jsonCursos);
-		escalonador.setCursos(cursos);
-
-		TurmasHelper turmasHelper = new TurmasHelper();
-		String jsonTurmas = turmasHelper.carregaRecursoJSON("turmas.json");
-		List<Turma> turmas = turmasHelper.constroiListaAPartirDeJSON(jsonTurmas);
-		escalonador.setTurmas(turmas);
-		
-		escalonador.setCargaHorariaMaximaPorInstrutor(160);
-		escalonador.setMaximoDeTurmasSeguidasPorInstrutor(2);
+		Escalonador escalonador = new Escalonador(cursos, instrutores, turmas, 160, 2);
 
 		AlocacaoDeInstrutores alocacao = escalonador.executa();
 		System.out.println(alocacao);
