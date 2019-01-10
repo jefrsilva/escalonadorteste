@@ -8,10 +8,13 @@ import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.entity.PlanningPin;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 @PlanningEntity
 public class Turma {
 
-	private Curso curso;
+	private String codigoCurso;
 	private Periodo periodo;
 	private List<Aula> aulas;
 
@@ -22,41 +25,33 @@ public class Turma {
 	public Turma() {
 	}
 
-	public Turma(Curso curso, Periodo periodo, List<LocalDate> diasDeAula) {
-		this.curso = curso;
-		this.periodo = periodo;		
-		this.aulas = 
-			diasDeAula
-				.stream()
-				.map(
-						dia -> new Aula(dia.atTime(this.periodo.getHoraDeInicio()), 
-										dia.atTime(this.periodo.getHoraDeTermino()))
-				)
-				.collect(Collectors.toList());
+	@JsonCreator
+	public Turma(@JsonProperty("codigoCurso") String codigoCurso, @JsonProperty("periodo") Periodo periodo,
+			@JsonProperty("diasDeAula") List<LocalDate> diasDeAula) {
+		this.codigoCurso = codigoCurso;
+		this.periodo = periodo;
+		this.aulas = diasDeAula.stream().map(dia -> new Aula(dia.atTime(this.periodo.getHoraDeInicio()),
+				dia.atTime(this.periodo.getHoraDeTermino()))).collect(Collectors.toList());
 		this.aulas.sort((umaData, outraData) -> umaData.getInstanteInicial().compareTo(outraData.getInstanteInicial()));
 	}
 
-	public String getCodigoDoCurso() {
-		return curso.getCodigo();
-	}
-
-	public int getCargaHoraria() {
-		return curso.getCargaHoraria();
+	public String getCodigoCurso() {
+		return codigoCurso;
 	}
 
 	public Periodo getPeriodo() {
 		return periodo;
 	}
-	
+
 	public List<Aula> getAulas() {
 		return aulas;
 	}
-	
+
 	public LocalDate getDataDeInicio() {
 		Aula primeiraAula = aulas.get(0);
 		return primeiraAula.getDia();
 	}
-	
+
 	public LocalDate getDataDeTermino() {
 		Aula ultimaAula = aulas.get(aulas.size() - 1);
 		return ultimaAula.getDia();
@@ -87,41 +82,42 @@ public class Turma {
 	public void setFixo(boolean fixo) {
 		this.fixo = fixo;
 	}
-
+	
 	@Override
 	public String toString() {
-		return curso.getCodigo() + " - " + (instrutor == null ? "" : instrutor.getNome());
+		return "Turma [codigoCurso=" + codigoCurso + ", periodo=" + periodo + ", instrutor=" + instrutor
+				+ ", getDataDeInicio()=" + getDataDeInicio() + ", getDataDeTermino()=" + getDataDeTermino() + "]";
 	}
 
-	 public boolean aulasConflitamCom(Turma turma) {
-		 int indiceMinhasAulas = 0;
-		 int indiceOutrasAulas = 0;
-		 boolean conflitou = false;
-		 while (!conflitou) {
-			 Aula minhaAula = this.aulas.get(indiceMinhasAulas);
-			 Aula outraAula = turma.getAulas().get(indiceOutrasAulas);
-			 
-			 LocalDate diaDaMinhaAula = minhaAula.getDia();
-			 LocalDate diaDaOutraAula = outraAula.getDia();
-	
-			 if (diaDaMinhaAula.equals(diaDaOutraAula)) {
-				 if (minhaAula.getHorarioDeInicio().isAfter(outraAula.getHorarioDeTermino())) {
-					 indiceOutrasAulas++;
-				 } else if (outraAula.getHorarioDeInicio().isAfter(minhaAula.getHorarioDeTermino())) {
-					 indiceMinhasAulas++;
-				 } else {
-					 conflitou = true;
-				 }
-			 } else if (diaDaMinhaAula.isBefore(diaDaOutraAula)) {
-				 indiceMinhasAulas++;
-			 } else if (diaDaOutraAula.isBefore(diaDaMinhaAula)) {
-				 indiceOutrasAulas++;
-			 }
-			 
-			 if (indiceMinhasAulas >= aulas.size() || indiceOutrasAulas >= turma.getAulas().size()) {
-				 break;
-			 }
-		 }
-		 return conflitou;
-	 }
+	public boolean aulasConflitamCom(Turma turma) {
+		int indiceMinhasAulas = 0;
+		int indiceOutrasAulas = 0;
+		boolean conflitou = false;
+		while (!conflitou) {
+			Aula minhaAula = this.aulas.get(indiceMinhasAulas);
+			Aula outraAula = turma.getAulas().get(indiceOutrasAulas);
+
+			LocalDate diaDaMinhaAula = minhaAula.getDia();
+			LocalDate diaDaOutraAula = outraAula.getDia();
+
+			if (diaDaMinhaAula.equals(diaDaOutraAula)) {
+				if (minhaAula.getHorarioDeInicio().isAfter(outraAula.getHorarioDeTermino())) {
+					indiceOutrasAulas++;
+				} else if (outraAula.getHorarioDeInicio().isAfter(minhaAula.getHorarioDeTermino())) {
+					indiceMinhasAulas++;
+				} else {
+					conflitou = true;
+				}
+			} else if (diaDaMinhaAula.isBefore(diaDaOutraAula)) {
+				indiceMinhasAulas++;
+			} else if (diaDaOutraAula.isBefore(diaDaMinhaAula)) {
+				indiceOutrasAulas++;
+			}
+
+			if (indiceMinhasAulas >= aulas.size() || indiceOutrasAulas >= turma.getAulas().size()) {
+				break;
+			}
+		}
+		return conflitou;
+	}
 }

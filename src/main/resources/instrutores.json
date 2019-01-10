@@ -1,0 +1,25 @@
+[
+	{
+		"nome": "Jeferson",
+	 	"cursos": [
+	 		"FJ-11"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	]
+	},
+	{
+		"nome": "Gaveta",
+	 	"cursos": [
+	 		"FJ-11",
+	 		"FJ-21"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	]
+	}
+]

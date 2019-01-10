@@ -2,12 +2,21 @@ package br.com.caelum.escalonadorteste.modelo;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Instrutor {
 	private String nome;
+
+	@JsonProperty("cursos")
 	private List<String> cursosConhecidos;
+
+	@JsonProperty("periodos")
 	private List<Periodo> periodosViaveis;
 
-	public Instrutor(String nome, List<String> cursosConhecidos, List<Periodo> periodosViaveis) {
+	@JsonCreator
+	public Instrutor(@JsonProperty("nome") String nome, @JsonProperty("cursos") List<String> cursosConhecidos,
+			@JsonProperty("periodos") List<Periodo> periodosViaveis) {
 		this.nome = nome;
 		this.cursosConhecidos = cursosConhecidos;
 		this.periodosViaveis = periodosViaveis;
@@ -18,7 +27,7 @@ public class Instrutor {
 	}
 
 	public boolean sabeDarOCurso(Turma turma) {
-		return cursosConhecidos.contains(turma.getCodigoDoCurso());
+		return cursosConhecidos.contains(turma.getCodigoCurso());
 	}
 
 	public boolean consegueDarAulaNoPeriodo(Turma turma) {
@@ -48,5 +57,11 @@ public class Instrutor {
 		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Instrutor [nome=" + nome + ", cursosConhecidos=" + cursosConhecidos + ", periodosViaveis="
+				+ periodosViaveis + "]";
 	}
 }

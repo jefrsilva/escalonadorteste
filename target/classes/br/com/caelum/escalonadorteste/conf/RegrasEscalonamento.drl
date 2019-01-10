@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import br.com.caelum.escalonadorteste.modelo.ParametrosDeEscalonamento
 import br.com.caelum.escalonadorteste.modelo.Turma
 import br.com.caelum.escalonadorteste.modelo.Instrutor
+import br.com.caelum.escalonadorteste.modelo.Curso
 
 import java.util.ArrayList;
 
@@ -29,7 +30,7 @@ rule "mais de X horas de aula"
 		$parametros : ParametrosDeEscalonamento()
 		$instrutor : Instrutor()
 		Number(intValue > $parametros.numeroMaximoDeHorasPorInstrutor) from 
-			accumulate($turma : Turma(instrutor == $instrutor); sum($turma.getCargaHoraria())) 
+			accumulate($turma : Turma(instrutor == $instrutor) and $curso : Curso(codigo == $turma.codigoCurso); sum($curso.getCargaHoraria())) 
 	then
 		scoreHolder.addSoftConstraintMatch(kcontext, -10);
 end
