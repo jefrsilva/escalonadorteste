@@ -18,6 +18,8 @@ public class Escalonador {
 	private List<Turma> turmas;
 	private List<Instrutor> instrutores;
 	private List<Curso> cursos;
+	private int cargaHorariaMaximaPorInstrutor;
+	private int maximoDeTurmasSeguidasPorInstrutor;
 
 	public void setTurmas(List<Turma> turmas) {
 		this.turmas = turmas;
@@ -40,6 +42,14 @@ public class Escalonador {
 		}
 	}
 
+	public void setCargaHorariaMaximaPorInstrutor(int cargaHoraria) {
+		this.cargaHorariaMaximaPorInstrutor = cargaHoraria;
+	}
+
+	public void setMaximoDeTurmasSeguidasPorInstrutor(int numeroDeTurmasSeguidas) {
+		this.maximoDeTurmasSeguidasPorInstrutor = numeroDeTurmasSeguidas;
+	}
+
 	public static void main(String[] args) {
 		Escalonador escalonador = new Escalonador();
 
@@ -57,23 +67,24 @@ public class Escalonador {
 		String jsonTurmas = turmasHelper.carregaRecursoJSON("turmas.json");
 		List<Turma> turmas = turmasHelper.constroiListaAPartirDeJSON(jsonTurmas);
 		escalonador.setTurmas(turmas);
+		
+		escalonador.setCargaHorariaMaximaPorInstrutor(160);
+		escalonador.setMaximoDeTurmasSeguidasPorInstrutor(2);
 
-		escalonador.executa();
+		AlocacaoDeInstrutores alocacao = escalonador.executa();
+		System.out.println(alocacao);
 	}
 
-	public void executa() {
+	public AlocacaoDeInstrutores executa() {
 		SolverFactory<AlocacaoDeInstrutores> solverFactory = SolverFactory
 				.createFromXmlResource("br/com/caelum/escalonadorteste/conf/alocacaoSolverConfig.xml");
 		Solver<AlocacaoDeInstrutores> solver = solverFactory.buildSolver();
 
-		AlocacaoDeInstrutores alocacaoNaoResolvida = new AlocacaoDeInstrutores(turmas, instrutores, cursos, 160, 2);
+		AlocacaoDeInstrutores alocacaoNaoResolvida = new AlocacaoDeInstrutores(turmas, instrutores, cursos,
+				cargaHorariaMaximaPorInstrutor, maximoDeTurmasSeguidasPorInstrutor);
 		AlocacaoDeInstrutores alocacao = solver.solve(alocacaoNaoResolvida);
 
-		for (Turma turma : alocacao.getTurmas()) {
-			System.out.println(
-					turma.getCodigoCurso() + " (" + turma.getDataDeInicio() + ") -> " + turma.getInstrutor().getNome());
-		}
-		System.out.println(alocacao.getScore());
+		return alocacao;
 	}
 
 }

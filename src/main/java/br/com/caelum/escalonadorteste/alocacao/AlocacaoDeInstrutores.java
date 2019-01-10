@@ -69,4 +69,14 @@ public class AlocacaoDeInstrutores {
 		this.score = score;
 	}
 
+	@Override
+	public String toString() {
+		String saida = "";
+		for (Turma turma : turmas) {
+			saida +=
+					turma.getCodigoCurso() + " (" + turma.getDataDeInicio() + ") -> " + turma.getInstrutor().getNome() + "\n";
+		}
+		saida += getScore() + "\n";
+		return saida;
+	}
 }
