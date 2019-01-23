@@ -1,0 +1,14 @@
+[
+	{
+		"codigoCurso": "Curso 1",
+		"periodo": "INTEGRAL",
+		"diasDeAula": [
+			"2018-11-26",
+			"2018-11-27",
+			"2018-11-28",
+			"2018-11-29",
+			"2018-11-30"			
+		],
+		"ehViagem": "false"
+	}
+]

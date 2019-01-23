@@ -8,7 +8,8 @@
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
-	 	]
+	 	],
+	 	"podeViajar": "false"
 	},
 	{
 		"nome": "Gaveta",
@@ -20,6 +21,7 @@
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
-	 	]
+	 	],
+	 	"podeViajar": "true"
 	}
 ]

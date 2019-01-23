@@ -6,32 +6,30 @@ import java.time.LocalTime;
 
 public class Aula {
 
-	private LocalDateTime instanteInicial;
-	private LocalDateTime instanteFinal;
+	private Intervalo intervalo;
 
 	public Aula(LocalDateTime instanteInicial, LocalDateTime instanteFinal) {
-		this.instanteInicial = instanteInicial;
-		this.instanteFinal = instanteFinal;
+		this.intervalo = new Intervalo(instanteInicial, instanteFinal);
 	}
 
 	public LocalDateTime getInstanteInicial() {
-		return instanteInicial;
+		return intervalo.getInstanteInicial();
 	}
 
 	public LocalDateTime getInstanteFinal() {
-		return instanteFinal;
+		return intervalo.getInstanteFinal();
 	}
 
-	public LocalDate getDia() {
-		return instanteInicial.toLocalDate();
+	public LocalDate getDiaDeInicio() {
+		return intervalo.getInstanteInicial().toLocalDate();
 	}
 
 	public LocalTime getHorarioDeInicio() {
-		return instanteInicial.toLocalTime();
+		return intervalo.getInstanteInicial().toLocalTime();
 	}
 
 	public LocalTime getHorarioDeTermino() {
-		return instanteFinal.toLocalTime();
+		return intervalo.getInstanteFinal().toLocalTime();
 	}
 
 }

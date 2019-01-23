@@ -73,8 +73,8 @@ public class AlocacaoDeInstrutores {
 	public String toString() {
 		String saida = "";
 		for (Turma turma : turmas) {
-			saida +=
-					turma.getCodigoCurso() + " (" + turma.getDataDeInicio() + ") -> " + turma.getInstrutor().getNome() + "\n";
+			saida += turma.getCodigoCurso() + " " + turma.getPeriodo() + " (" + turma.getDataDeInicio() + ") -> "
+					+ turma.getInstrutor().getNome() + "\n";
 		}
 		saida += getScore() + "\n";
 		return saida;

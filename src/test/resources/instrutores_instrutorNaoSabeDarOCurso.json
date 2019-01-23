@@ -1,0 +1,24 @@
+[
+	{
+		"nome": "Instrutor A",
+	 	"cursos": [
+	 		"Curso 1"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL"
+	 	],
+	 	"podeViajar": "false",
+	 	"indisponibilidades": []
+	},
+	{
+		"nome": "Instrutor B",
+	 	"cursos": [
+	 		"Curso 2"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL"
+	 	],
+	 	"podeViajar": "false",
+	 	"indisponibilidades": []
+	}
+]

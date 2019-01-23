@@ -25,6 +25,13 @@ rule "não consegue dar aula no período"
         scoreHolder.addHardConstraintMatch(kcontext, -10);
 end
 
+rule "não está disponível nos dias da turma"
+	when
+		Turma(instrutor != null, !instrutor.estaDisponivelNosDiasDaTurma(this))
+	then
+		scoreHolder.addHardConstraintMatch(kcontext, -10);
+end
+
 rule "mais de X horas de aula"
 	when
 		$parametros : ParametrosDeEscalonamento()

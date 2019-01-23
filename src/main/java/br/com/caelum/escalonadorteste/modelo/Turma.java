@@ -55,12 +55,12 @@ public class Turma {
 
 	public LocalDate getDataDeInicio() {
 		Aula primeiraAula = aulas.get(0);
-		return primeiraAula.getDia();
+		return primeiraAula.getDiaDeInicio();
 	}
 
 	public LocalDate getDataDeTermino() {
 		Aula ultimaAula = aulas.get(aulas.size() - 1);
-		return ultimaAula.getDia();
+		return ultimaAula.getDiaDeInicio();
 	}
 
 	@PlanningVariable(valueRangeProviderRefs = "listaDeInstrutores")
@@ -103,8 +103,8 @@ public class Turma {
 			Aula minhaAula = this.aulas.get(indiceMinhasAulas);
 			Aula outraAula = turma.getAulas().get(indiceOutrasAulas);
 
-			LocalDate diaDaMinhaAula = minhaAula.getDia();
-			LocalDate diaDaOutraAula = outraAula.getDia();
+			LocalDate diaDaMinhaAula = minhaAula.getDiaDeInicio();
+			LocalDate diaDaOutraAula = outraAula.getDiaDeInicio();
 
 			if (diaDaMinhaAula.equals(diaDaOutraAula)) {
 				if (minhaAula.getHorarioDeInicio().isAfter(outraAula.getHorarioDeTermino())) {

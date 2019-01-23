@@ -1,5 +1,6 @@
 package br.com.caelum.escalonadorteste.modelo;
 
+import java.util.Collections;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -13,17 +14,25 @@ public class Instrutor {
 
 	@JsonProperty("periodos")
 	private List<Periodo> periodosViaveis;
-	
+
 	@JsonProperty("podeViajar")
 	private boolean disponivelParaViagem;
 
+	@JsonProperty("indisponibilidades")
+	private List<Intervalo> datasIndisponiveis = Collections.emptyList();
+
 	@JsonCreator
 	public Instrutor(@JsonProperty("nome") String nome, @JsonProperty("cursos") List<String> cursosConhecidos,
-			@JsonProperty("periodos") List<Periodo> periodosViaveis, @JsonProperty("podeViajar") boolean disponivelParaViagem) {
+			@JsonProperty("periodos") List<Periodo> periodosViaveis,
+			@JsonProperty("podeViajar") boolean disponivelParaViagem,
+			@JsonProperty("indisponibilidades") List<Intervalo> datasIndisponiveis) {
 		this.nome = nome;
 		this.cursosConhecidos = cursosConhecidos;
 		this.periodosViaveis = periodosViaveis;
 		this.disponivelParaViagem = disponivelParaViagem;
+		if (datasIndisponiveis != null) {
+			this.datasIndisponiveis = datasIndisponiveis;
+		}
 	}
 
 	public String getNome() {
@@ -37,9 +46,22 @@ public class Instrutor {
 	public boolean consegueDarAulaNoPeriodo(Turma turma) {
 		return periodosViaveis.contains(turma.getPeriodo());
 	}
-	
+
 	public boolean estaDisponivelParaViagem() {
 		return disponivelParaViagem;
+	}
+
+	public boolean estaDisponivelNosDiasDaTurma(Turma turma) {
+		boolean estaDisponivel = true;
+		for (Intervalo intervalo : datasIndisponiveis) {
+			for (Aula aula : turma.getAulas()) {
+				if (intervalo.contem(aula.getInstanteInicial())) {
+					estaDisponivel = false;
+					break;
+				}
+			}
+		}
+		return estaDisponivel;
 	}
 
 	@Override
