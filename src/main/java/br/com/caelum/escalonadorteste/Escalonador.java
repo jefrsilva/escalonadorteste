@@ -6,10 +6,10 @@ import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
 
 import br.com.caelum.escalonadorteste.alocacao.AlocacaoDeInstrutores;
+import br.com.caelum.escalonadorteste.cweb.TurmasCWebHelper;
 import br.com.caelum.escalonadorteste.helper.CursosHelper;
 import br.com.caelum.escalonadorteste.helper.InstrutoresHelper;
 import br.com.caelum.escalonadorteste.helper.JSONHelper;
-import br.com.caelum.escalonadorteste.helper.TurmasHelper;
 import br.com.caelum.escalonadorteste.modelo.Curso;
 import br.com.caelum.escalonadorteste.modelo.Instrutor;
 import br.com.caelum.escalonadorteste.modelo.Turma;
@@ -53,16 +53,16 @@ public class Escalonador {
 
 	public static void main(String[] args) {
 		JSONHelper jsonHelper = new JSONHelper();
-		String jsonInstrutores = jsonHelper.carregaRecursoJSON("instrutores.json");
-		String jsonCursos = jsonHelper.carregaRecursoJSON("cursos.json");
-		String jsonTurmas = jsonHelper.carregaRecursoJSON("turmas.json");
 
-		List<Curso> cursos = new CursosHelper().constroiListaAPartirDeJSON(jsonCursos);
+		String jsonInstrutores = jsonHelper.carregaRecursoJSON("instrutores-cweb.json");
+		String jsonCursos = jsonHelper.carregaRecursoJSON("cursos-cweb.json");
+		String jsonTurmasCWeb = jsonHelper.carregaRecursoJSON("turmas-cweb.json");
+
 		List<Instrutor> instrutores = new InstrutoresHelper().constroiListaAPartirDeJSON(jsonInstrutores);
-		List<Turma> turmas = new TurmasHelper().constroiListaAPartirDeJSON(jsonTurmas);
+		List<Curso> cursos = new CursosHelper().constroiListaAPartirDeJSON(jsonCursos);
+		List<Turma> turmas = new TurmasCWebHelper(cursos).getTurmas(jsonTurmasCWeb);
 
-		Escalonador escalonador = new Escalonador(cursos, instrutores, turmas, 160, 2);
-
+		Escalonador escalonador = new Escalonador(cursos, instrutores, turmas, 180, 2);
 		AlocacaoDeInstrutores alocacao = escalonador.executa();
 		System.out.println(alocacao);
 	}
@@ -78,5 +78,4 @@ public class Escalonador {
 
 		return alocacao;
 	}
-
 }

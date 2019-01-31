@@ -44,7 +44,7 @@ public class AlocacaoDeInstrutoresScoreTest {
 		List<Turma> turmas = turmasHelper.constroiListaAPartirDeJSON(jsonTurmas);
 
 		Turma turmaIntegral = turmas.get(0);
-		
+
 		String nomeDaRegra = "não sabe dar o curso";
 		AlocacaoDeInstrutores alocacao = new AlocacaoDeInstrutores(turmas, instrutores, cursos, 60, 3);
 
@@ -98,9 +98,11 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorEstaIndisponivelNosDiasDaTurma() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Arrays.asList(new Intervalo(LocalDateTime.of(2018,11,27,18,0), LocalDateTime.of(2018,11,28,8,0))));
+				false, Arrays.asList(
+						new Intervalo(LocalDateTime.of(2018, 11, 27, 18, 0), LocalDateTime.of(2018, 11, 28, 8, 0))));
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
-				false, Arrays.asList(new Intervalo(LocalDateTime.of(2018,11,27,0,0), LocalDateTime.of(2018,11,27,23,59))));
+				false, Arrays.asList(
+						new Intervalo(LocalDateTime.of(2018, 11, 27, 0, 0), LocalDateTime.of(2018, 11, 27, 23, 59))));
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -129,7 +131,7 @@ public class AlocacaoDeInstrutoresScoreTest {
 		turma1.setInstrutor(instrutor2);
 		verificador.assertHardWeight(nomeDaRegra, -10, alocacao);
 	}
-	
+
 	@Test
 	public void instrutorPegouMuitasHorasDeAula() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
@@ -347,6 +349,49 @@ public class AlocacaoDeInstrutoresScoreTest {
 
 		// Instrutor alocado não pode viajar
 		turma1.setInstrutor(instrutor2);
+		verificador.assertHardWeight(nomeDaRegra, -10, alocacao);
+	}
+
+	@Test
+	public void instrutorNaoPodeDarIntegralENoturnoSimultaneamente() {
+		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
+				false, Collections.emptyList());
+		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
+				false, Collections.emptyList());
+
+		List<Instrutor> instrutores = new ArrayList<>();
+		instrutores.add(instrutor1);
+		instrutores.add(instrutor2);
+
+		List<Curso> cursos = Arrays.asList(new Curso("Curso 1", 40));
+
+		List<Turma> turmas = new ArrayList<>();
+		Turma turma1 = new Turma("Curso 1", Periodo.INTEGRAL,
+				Arrays.asList(LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 27), LocalDate.of(2018, 11, 28),
+						LocalDate.of(2018, 11, 29), LocalDate.of(2018, 11, 30)),
+				false);
+		Turma turma2 = new Turma("Curso 1", Periodo.NOTURNO,
+				Arrays.asList(LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 27), LocalDate.of(2018, 11, 28),
+						LocalDate.of(2018, 11, 29), LocalDate.of(2018, 11, 30), LocalDate.of(2018, 12, 3),
+						LocalDate.of(2018, 12, 4), LocalDate.of(2018, 12, 5), LocalDate.of(2018, 12, 6),
+						LocalDate.of(2018, 12, 7)),
+				false);
+		turmas.add(turma1);
+		turmas.add(turma2);
+
+		String nomeDaRegra = "pegou integral e noturno simultaneamente";
+		AlocacaoDeInstrutores alocacao = new AlocacaoDeInstrutores(turmas, instrutores, cursos, 60, 3);
+
+		// Alocação vazia
+		verificador.assertHardWeight(nomeDaRegra, 0, alocacao);
+
+		// Um instrutor diferente para cada período
+		turma1.setInstrutor(instrutor1);
+		turma2.setInstrutor(instrutor2);
+		verificador.assertHardWeight(nomeDaRegra, 0, alocacao);
+
+		// Mesmo instrutor para os dois períodos
+		turma2.setInstrutor(instrutor1);
 		verificador.assertHardWeight(nomeDaRegra, -10, alocacao);
 	}
 }

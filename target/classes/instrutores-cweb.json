@@ -1,0 +1,385 @@
+[
+	{
+		"nome": "Ana Losnak",
+	 	"cursos": [
+	 		"WD-01",
+	 		"FJ-11",
+	 		"FJ-21",
+	 		"FJ-22",
+	 		"FJ-57",
+	 		"FJ-59"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Andreza Luchini",
+	 	"cursos": [
+	 		"WD-01",
+	 		"WD-43"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Artur Adam",
+	 	"cursos": [
+	 		"WD-01",
+	 		"WD-43",
+	 		"WD-47",
+	 		"JS-12",
+	 		"JS-35",
+	 		"JS-45-20hs"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Gabriel Ferreira",
+	 	"cursos": [
+	 		"FN-13",
+	 		"FN-23"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Lucas Sampaio",
+	 	"cursos": [
+	 		"FJ-11",
+	 		"FJ-21",
+	 		"FJ-25",
+	 		"FJ-27",
+	 		"FJ-38"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Matheus Marcus",
+	 	"cursos": [
+	 		"WD-43"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Mário Souto",
+	 	"cursos": [
+	 		"WD-47",
+	 		"JS-35",
+	 		"JS-45-20hs",
+	 		"JS-45",
+	 		"JS-46",
+	 		"JS-56"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Thais André",
+	 	"cursos": [
+	 		"FJ-11",
+	 		"FJ-21",
+	 		"FJ-27"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Vanessa Tonini",
+	 	"cursos": [
+	 		"WD-43",
+	 		"WD-47",
+	 		"JS-35",
+	 		"JS-45-20hs",
+	 		"JS-45"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Wanderson Sabino",
+	 	"cursos": [
+	 		"WD-41",
+	 		"JS-45-20hs"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	
+
+
+	{
+		"nome": "Alefh Sousa",
+	 	"cursos": [
+ 			"FJ-22",
+	 		"FJ-27",
+	 		"FJ-36"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Allan Romanato",
+	 	"cursos": [
+	 		"FJ-11",
+	 		"FJ-21",
+	 		"FJ-22"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Anderson Galeote",
+	 	"cursos": [
+	 		"JS-45-20hs",
+	 		"JS-45"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Carlos Savi",
+	 	"cursos": [
+	 		"IP-67"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Danilo Leite",
+	 	"cursos": [
+	 		"FJ-57",
+	 		"FJ-59"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Fernando Furtado",
+	 	"cursos": [
+	 		"FJ-22",
+	 		"FJ-27",
+	 		"FJ-36",
+	 		"FJ-38",
+	 		"FJ-91",
+	 		"IP-67"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Guilherme Romão",
+	 	"cursos": [
+	 		"FJ-11",
+	 		"FJ-21",
+	 		"FJ-25"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Henrique Lopes",
+	 	"cursos": [
+	 		"FN-13",
+	 		"FN-23"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Ítalo Moraes",
+	 	"cursos": [
+	 		"WD-47",
+	 		"JS-46"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Jhonatan Jacinto",
+	 	"cursos": [
+	 		"WD-01",
+	 		"WD-47",
+	 		"FP-73"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Leonardo Souza",
+	 	"cursos": [
+	 		"WD-01",
+	 		"WD-43",
+	 		"WD-47",
+	 		"JS-35"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Letícia Costa",
+	 	"cursos": [
+	 		"WD-47",
+	 		"JS-46"
+	 	],
+	 	"periodos": [
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Lucas César",
+	 	"cursos": [
+	 		"WD-41"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Lucas Furlaneto",
+	 	"cursos": [
+	 		"FJ-21"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Newton Beck",
+	 	"cursos": [
+	 		"FJ-22",
+	 		"JS-56"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Priscila Sonnesso",
+	 	"cursos": [
+	 		"WD-41"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Rita Cury",
+	 	"cursos": [
+	 		"FJ-11"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true"
+	},
+	{
+		"nome": "Robson Pantolfi",
+	 	"cursos": [
+	 		"PM-83"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	},
+	{
+		"nome": "Thiago Andrade",
+	 	"cursos": [
+	 		"FJ-11"
+	 	],
+	 	"periodos": [
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false"
+	}
+]

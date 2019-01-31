@@ -14,6 +14,11 @@ public enum Periodo {
 		public LocalTime getHoraDeTermino() {
 			return LocalTime.of(13, 0);
 		}
+
+		@Override
+		public int getCargaDiaria() {
+			return 4;
+		}
 	},
 	
 	TARDE {
@@ -25,6 +30,11 @@ public enum Periodo {
 		@Override
 		public LocalTime getHoraDeTermino() {
 			return LocalTime.of(18, 0);
+		}
+
+		@Override
+		public int getCargaDiaria() {
+			return 4;
 		}
 	},
 	
@@ -38,6 +48,11 @@ public enum Periodo {
 		public LocalTime getHoraDeTermino() {
 			return LocalTime.of(17, 0);
 		}
+
+		@Override
+		public int getCargaDiaria() {
+			return 8;
+		}
 	},
 	
 	NOTURNO {
@@ -49,6 +64,11 @@ public enum Periodo {
 		@Override
 		public LocalTime getHoraDeTermino() {
 			return LocalTime.of(23, 0);
+		}
+
+		@Override
+		public int getCargaDiaria() {
+			return 4;
 		}
 	},
 	
@@ -62,9 +82,15 @@ public enum Periodo {
 		public LocalTime getHoraDeTermino() {
 			return LocalTime.of(17, 0);
 		}
+
+		@Override
+		public int getCargaDiaria() {
+			return 8;
+		}
 	};
 	
 	public abstract LocalTime getHoraDeInicio();
 	public abstract LocalTime getHoraDeTermino();
+	public abstract int getCargaDiaria();
 
 }

@@ -1,0 +1,114 @@
+[
+	{
+		"codigo": "WD-01",
+		"cargaHoraria": 32
+	},	
+	{
+		"codigo": "FJ-11",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "FJ-21",
+		"cargaHoraria": 40
+	},
+	{
+		"codigo": "FJ-22",
+		"cargaHoraria": 32
+	},	
+	{
+		"codigo": "FJ-25",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "FJ-27",
+		"cargaHoraria": 40
+	},
+	{
+		"codigo": "FJ-36",
+		"cargaHoraria": 32
+	},
+	{
+		"codigo": "FJ-38",
+		"cargaHoraria": 32
+	},	
+	{
+		"codigo": "SE-39",
+		"cargaHoraria": 20
+	},
+	{
+		"codigo": "FJ-91",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "PY-14",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "WD-41",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "WD-43",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "WD-47",
+		"cargaHoraria": 32
+	},
+	{
+		"codigo": "WD-01",
+		"cargaHoraria": 32
+	},		
+	{
+		"codigo": "JS-12",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "JS-35",
+		"cargaHoraria": 20
+	},	
+	{
+		"codigo": "JS-45-20hs",
+		"cargaHoraria": 20
+	},	
+	{
+		"codigo": "JS-45",
+		"cargaHoraria": 40
+	},
+	{
+		"codigo": "JS-46",
+		"cargaHoraria": 32
+	},	
+	{
+		"codigo": "JS-56",
+		"cargaHoraria": 32
+	},
+	{
+		"codigo": "PM-83",
+		"cargaHoraria": 40
+	},
+	{
+		"codigo": "FP-73",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "FJ-57",
+		"cargaHoraria": 40
+	},
+	{
+		"codigo": "FJ-59",
+		"cargaHoraria": 32
+	},
+	{
+		"codigo": "IP-67",
+		"cargaHoraria": 40
+	},
+	{
+		"codigo": "FN-13",
+		"cargaHoraria": 40
+	},	
+	{
+		"codigo": "FN-23",
+		"cargaHoraria": 40
+	}	
+]

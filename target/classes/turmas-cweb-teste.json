@@ -1,0 +1,2365 @@
+{
+  "turmas": {
+    "semanas": [
+      {
+        "data": "07/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 7850,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "10/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8018,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "11/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Andreza Luchini",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "WD-43",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8021,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "11/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Ana Losnak",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8028,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "WD-01",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8034,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Letícia Costa Dias",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "JS-46",
+            "inCompany": false
+          },
+          {
+            "id": 8035,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury,Lucas Félix Sampaio",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-11",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8038,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Newton Beck,Alefh Sousa",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8041,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas Alessandro Furlaneto Silvério,Allan Romanato\t\t",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8042,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas César",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "WD-41",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "14/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8028,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "WD-01",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8034,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Letícia Costa Dias",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "JS-46",
+            "inCompany": false
+          },
+          {
+            "id": 8035,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury,Lucas Félix Sampaio",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-11",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8038,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Newton Beck,Alefh Sousa",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8041,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas Alessandro Furlaneto Silvério,Allan Romanato\t\t",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8042,
+            "primeiroDia": "07/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas César",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "WD-41",
+            "inCompany": false
+          },
+          {
+            "id": 7851,
+            "primeiroDia": "14/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8019,
+            "primeiroDia": "14/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-47",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8132,
+            "primeiroDia": "14/01/2019",
+            "ultimoDia": "18/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Thais Thomazini André",
+            "nomeSala": "Sala externa viagem SP",
+            "codigoCurso": "FJ-27",
+            "cidade": "Curitiba - PR",
+            "inCompany": true,
+            "empresa": "Furukawa "
+          },
+          {
+            "id": 8265,
+            "primeiroDia": "14/01/2019",
+            "ultimoDia": "17/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Ana Losnak",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-59",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "21/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8016,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "25/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Lucas Félix Sampaio",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-21",
+            "inCompany": false
+          },
+          {
+            "id": 8025,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "25/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Thais Thomazini André",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "inCompany": false
+          },
+          {
+            "id": 8026,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "25/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Vanessa Martinez Tonini",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8029,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury,Ana Losnak",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "FJ-11",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8030,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8036,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas Alessandro Furlaneto Silvério",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-21",
+            "inCompany": false
+          },
+          {
+            "id": 8039,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Matheus Vidal Brandino",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "inCompany": false
+          },
+          {
+            "id": 8046,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "25/01/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Robson Pantolfi",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "PM-83",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8072,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8242,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "25/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury",
+            "nomeSala": "Sala Externa Unidade SP",
+            "codigoCurso": "FJ-11",
+            "cidade": "São Paulo",
+            "inCompany": true,
+            "empresa": "Bradesco Seguros"
+          }
+        ]
+      },
+      {
+        "data": "28/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8029,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury,Ana Losnak",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "FJ-11",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8030,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8036,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas Alessandro Furlaneto Silvério",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-21",
+            "inCompany": false
+          },
+          {
+            "id": 8039,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Matheus Vidal Brandino",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "inCompany": false
+          },
+          {
+            "id": 8072,
+            "primeiroDia": "21/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8017,
+            "primeiroDia": "28/01/2019",
+            "ultimoDia": "31/01/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Lucas Félix Sampaio,Alefh Sousa",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8227,
+            "primeiroDia": "28/01/2019",
+            "ultimoDia": "01/02/2019",
+            "horario": "Manha (9:00 às 13:00)",
+            "nomesInstrutores": "Vanessa Martinez Tonini",
+            "nomeSala": "Sala externa viagem SP",
+            "codigoCurso": "JS-45-20hs",
+            "cidade": "Juiz de Fora - MG",
+            "inCompany": true,
+            "empresa": "UFJF"
+          }
+        ]
+      },
+      {
+        "data": "04/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8031,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-47",
+            "inCompany": false
+          },
+          {
+            "id": 8032,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas Alessandro Furlaneto Silvério",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-21",
+            "inCompany": false
+          },
+          {
+            "id": 8037,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8040,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Danilo Leite",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-59",
+            "inCompany": false
+          },
+          {
+            "id": 8073,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "inCompany": false
+          },
+          {
+            "id": 8207,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "inCompany": false
+          },
+          {
+            "id": 8266,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "06/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Wanderson Macêdo Sabino",
+            "nomeSala": "Sala externa viagem SP",
+            "codigoCurso": "JS-45-20hs",
+            "cidade": "Palmas - TO",
+            "inCompany": true,
+            "empresa": "UFT"
+          }
+        ]
+      },
+      {
+        "data": "11/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8031,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-47",
+            "inCompany": false
+          },
+          {
+            "id": 8032,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Lucas Alessandro Furlaneto Silvério",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-21",
+            "inCompany": false
+          },
+          {
+            "id": 8037,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8040,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Danilo Leite",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-59",
+            "inCompany": false
+          },
+          {
+            "id": 8073,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "inCompany": false
+          },
+          {
+            "id": 8207,
+            "primeiroDia": "04/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "inCompany": false
+          },
+          {
+            "id": 7985,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "PY-14",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8178,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Mario Souto",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "JS-46",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8180,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "15/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-21",
+            "inCompany": false
+          },
+          {
+            "id": 8188,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "sala 131",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8195,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "FJ-38",
+            "inCompany": false
+          },
+          {
+            "id": 8216,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "22/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Priscila Sonnesso",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "WD-41",
+            "inCompany": false
+          },
+          {
+            "id": 8253,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "14/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-47",
+            "cidade": "São Paulo",
+            "inCompany": true,
+            "empresa": "Bradesco Seguros"
+          }
+        ]
+      },
+      {
+        "data": "18/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8216,
+            "primeiroDia": "11/02/2019",
+            "ultimoDia": "22/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Priscila Sonnesso",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "WD-41",
+            "inCompany": false
+          },
+          {
+            "id": 8033,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "28/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Allan Romanato\t\t",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8136,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "21/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Rodrigo da Silva Ferreira",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "SE-39",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8181,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "21/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8189,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "22/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8199,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "22/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Ana Losnak",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "inCompany": false
+          },
+          {
+            "id": 8204,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "28/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8208,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "28/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-46",
+            "inCompany": false
+          },
+          {
+            "id": 8209,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "01/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "inCompany": false
+          },
+          {
+            "id": 8226,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "22/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala externa viagem SP",
+            "codigoCurso": "FJ-27",
+            "cidade": "Juiz de Fora - MG",
+            "inCompany": true,
+            "empresa": "UFJF"
+          },
+          {
+            "id": 8254,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "21/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "WD-47",
+            "cidade": "São Paulo",
+            "inCompany": true,
+            "empresa": "Bradesco Seguros"
+          }
+        ]
+      },
+      {
+        "data": "25/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8033,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "28/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Allan Romanato\t\t",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8204,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "28/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8208,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "28/02/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-46",
+            "inCompany": false
+          },
+          {
+            "id": 8209,
+            "primeiroDia": "18/02/2019",
+            "ultimoDia": "01/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "inCompany": false
+          },
+          {
+            "id": 8027,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "27/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Artur Diniz Adam",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "JS-35",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8044,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "01/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Mario Souto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "JS-35",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8179,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "01/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-11",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8190,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "28/02/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "sala 131",
+            "codigoCurso": "WD-47",
+            "inCompany": false
+          },
+          {
+            "id": 8196,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "01/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8215,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "08/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-38",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8233,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "01/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Wanderson Macêdo Sabino",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "WD-41",
+            "inCompany": false
+          },
+          {
+            "id": 8270,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "01/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-27",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "04/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8215,
+            "primeiroDia": "25/02/2019",
+            "ultimoDia": "08/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-38",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "11/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 7898,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "14/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "JS-56",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8138,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "15/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "JS-12",
+            "inCompany": false
+          },
+          {
+            "id": 8191,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "14/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "sala 131",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8197,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "15/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8200,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "14/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Ana Losnak",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-59",
+            "inCompany": false
+          },
+          {
+            "id": 8201,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8205,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8210,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          },
+          {
+            "id": 8213,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Vinicius Jarina",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8217,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "inCompany": false
+          },
+          {
+            "id": 8255,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "15/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "FJ-27",
+            "cidade": "São Paulo",
+            "inCompany": true,
+            "empresa": "Bradesco Seguros"
+          },
+          {
+            "id": 8267,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "15/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala externa viagem SP",
+            "codigoCurso": "WD-41",
+            "cidade": "Palmas - TO",
+            "inCompany": true,
+            "empresa": "UFT"
+          },
+          {
+            "id": 8277,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "21/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "JS-56",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "18/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8201,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Rita de Cassia Freitas Cury",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8205,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8210,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          },
+          {
+            "id": 8213,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Vinicius Jarina",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8217,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "inCompany": false
+          },
+          {
+            "id": 8277,
+            "primeiroDia": "11/03/2019",
+            "ultimoDia": "21/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "JS-56",
+            "inCompany": false
+          },
+          {
+            "id": 8106,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "29/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8192,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8198,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FN-23",
+            "inCompany": false
+          },
+          {
+            "id": 8211,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "29/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Danilo Leite",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8225,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "FJ-91",
+            "inCompany": false
+          },
+          {
+            "id": 8256,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "22/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-27",
+            "cidade": "São Paulo",
+            "inCompany": true,
+            "empresa": "Bradesco Seguros"
+          }
+        ]
+      },
+      {
+        "data": "25/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8106,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "29/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8211,
+            "primeiroDia": "18/03/2019",
+            "ultimoDia": "29/03/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomesInstrutores": "Danilo Leite",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8024,
+            "primeiroDia": "25/03/2019",
+            "ultimoDia": "29/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Lucas Félix Sampaio",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "FJ-25",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8193,
+            "primeiroDia": "25/03/2019",
+            "ultimoDia": "28/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "sala 131",
+            "codigoCurso": "WD-47",
+            "inCompany": false
+          },
+          {
+            "id": 8202,
+            "primeiroDia": "25/03/2019",
+            "ultimoDia": "05/04/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "FJ-21",
+            "inCompany": false
+          },
+          {
+            "id": 8206,
+            "primeiroDia": "25/03/2019",
+            "ultimoDia": "04/04/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "WD-47",
+            "inCompany": false
+          },
+          {
+            "id": 8214,
+            "primeiroDia": "25/03/2019",
+            "ultimoDia": "05/04/2019",
+            "horario": "Noturno (19:00 às 23:00)",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "inCompany": false
+          },
+          {
+            "id": 8223,
+            "primeiroDia": "25/03/2019",
+            "ultimoDia": "29/03/2019",
+            "horario": "Integral (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "05/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8003,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "26/01/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8004,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Guilherme Romão",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8005,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Matheus Alberto Marcus",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8009,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8010,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "19/01/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Vanessa Martinez Tonini",
+            "nomeSala": "sala 131",
+            "codigoCurso": "JS-35",
+            "inCompany": false
+          },
+          {
+            "id": 8043,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "09/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "12/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8003,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "26/01/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8004,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Guilherme Romão",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8005,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Matheus Alberto Marcus",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8009,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8010,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "19/01/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Vanessa Martinez Tonini",
+            "nomeSala": "sala 131",
+            "codigoCurso": "JS-35",
+            "inCompany": false
+          },
+          {
+            "id": 8043,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "09/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "19/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8003,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "26/01/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8004,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Guilherme Romão",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8005,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Matheus Alberto Marcus",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8009,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8010,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "19/01/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Vanessa Martinez Tonini",
+            "nomeSala": "sala 131",
+            "codigoCurso": "JS-35",
+            "inCompany": false
+          },
+          {
+            "id": 8043,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "09/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "26/01/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8003,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "26/01/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8004,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Guilherme Romão",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8005,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Matheus Alberto Marcus",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8009,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8043,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "09/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8007,
+            "primeiroDia": "26/01/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Fernando W S Furtado",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "02/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8004,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Guilherme Romão",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8005,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Matheus Alberto Marcus",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8009,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "02/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-13",
+            "inCompany": false
+          },
+          {
+            "id": 8043,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "09/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8007,
+            "primeiroDia": "26/01/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Fernando W S Furtado",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          },
+          {
+            "id": 8006,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Anderson dos Santos Galeote",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8160,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "09/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8043,
+            "primeiroDia": "05/01/2019",
+            "ultimoDia": "09/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8007,
+            "primeiroDia": "26/01/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Fernando W S Furtado",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          },
+          {
+            "id": 8006,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Anderson dos Santos Galeote",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8160,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 7908,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jeferson R Silva",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-25",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8011,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "A DEFINIR - SP",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8013,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-47",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8014,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8015,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Gabriel Ferreira,Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8166,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "16/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8007,
+            "primeiroDia": "26/01/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Fernando W S Furtado",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          },
+          {
+            "id": 8006,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Anderson dos Santos Galeote",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8160,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 7908,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jeferson R Silva",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-25",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8011,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "A DEFINIR - SP",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8013,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-47",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8014,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8015,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Gabriel Ferreira,Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8166,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "23/02/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8007,
+            "primeiroDia": "26/01/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Fernando W S Furtado",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-36",
+            "inCompany": false
+          },
+          {
+            "id": 8006,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Anderson dos Santos Galeote",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8160,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "23/02/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jhonatan Rosa Jacinto",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 7908,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jeferson R Silva",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-25",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8011,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "A DEFINIR - SP",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8013,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-47",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8014,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8015,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Gabriel Ferreira,Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8166,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "02/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8006,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Anderson dos Santos Galeote",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 7908,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jeferson R Silva",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-25",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8011,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "A DEFINIR - SP",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8013,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-47",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8014,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8015,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Gabriel Ferreira,Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8166,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "09/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8006,
+            "primeiroDia": "02/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Anderson dos Santos Galeote",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-45",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 7908,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jeferson R Silva",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-25",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8011,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "A DEFINIR - SP",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8013,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "09/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-47",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8014,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8015,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Gabriel Ferreira,Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8166,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8163,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8168,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "30/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-38",
+            "inCompany": false
+          },
+          {
+            "id": 8173,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "inCompany": false
+          },
+          {
+            "id": 8175,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "23/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "PM-83",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "16/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 7908,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Jeferson R Silva",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-25",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8011,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "A DEFINIR - SP",
+            "codigoCurso": "FJ-21",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8014,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "FJ-27",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8015,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Gabriel Ferreira,Henrique Lopes de Souza",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "FN-23",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8166,
+            "primeiroDia": "09/02/2019",
+            "ultimoDia": "16/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-57",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8163,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8168,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "30/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-38",
+            "inCompany": false
+          },
+          {
+            "id": 8173,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "inCompany": false
+          },
+          {
+            "id": 8175,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "23/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "PM-83",
+            "inCompany": false
+          },
+          {
+            "id": 8161,
+            "primeiroDia": "16/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8171,
+            "primeiroDia": "16/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-46",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "23/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8163,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8168,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "30/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-38",
+            "inCompany": false
+          },
+          {
+            "id": 8173,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "inCompany": false
+          },
+          {
+            "id": 8175,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "23/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "PM-83",
+            "inCompany": false
+          },
+          {
+            "id": 8161,
+            "primeiroDia": "16/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8171,
+            "primeiroDia": "16/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-46",
+            "inCompany": false
+          },
+          {
+            "id": 8012,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8159,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "20/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "JS-45",
+            "inCompany": false
+          },
+          {
+            "id": 8167,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-59",
+            "inCompany": false
+          },
+          {
+            "id": 8170,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          }
+        ]
+      },
+      {
+        "data": "30/03/2019",
+        "turmasDaSemana": [
+          {
+            "id": 8163,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 55",
+            "codigoCurso": "FJ-11",
+            "inCompany": false
+          },
+          {
+            "id": 8168,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "30/03/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "sala 131",
+            "codigoCurso": "FJ-38",
+            "inCompany": false
+          },
+          {
+            "id": 8173,
+            "primeiroDia": "09/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Carlos Alberto Savi",
+            "nomeSala": "Sala 57",
+            "codigoCurso": "IP-67",
+            "inCompany": false
+          },
+          {
+            "id": 8161,
+            "primeiroDia": "16/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 113",
+            "codigoCurso": "WD-43",
+            "inCompany": false
+          },
+          {
+            "id": 8171,
+            "primeiroDia": "16/03/2019",
+            "ultimoDia": "06/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 141",
+            "codigoCurso": "JS-46",
+            "inCompany": false
+          },
+          {
+            "id": 8012,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 114",
+            "codigoCurso": "FJ-22",
+            "cidade": "Sao Paulo",
+            "inCompany": false
+          },
+          {
+            "id": 8159,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "20/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 126",
+            "codigoCurso": "JS-45",
+            "inCompany": false
+          },
+          {
+            "id": 8167,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Sala 144",
+            "codigoCurso": "FJ-59",
+            "inCompany": false
+          },
+          {
+            "id": 8170,
+            "primeiroDia": "23/03/2019",
+            "ultimoDia": "13/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomesInstrutores": "Leonardo Souza",
+            "nomeSala": "Sala 133",
+            "codigoCurso": "WD-01",
+            "inCompany": false
+          },
+          {
+            "id": 8177,
+            "primeiroDia": "30/03/2019",
+            "ultimoDia": "27/04/2019",
+            "horario": "Sabado (9:00 às 17:00)",
+            "nomeSala": "Auditório SP",
+            "codigoCurso": "WD-41",
+            "inCompany": false
+          }
+        ]
+      }
+    ]
+  }
+}

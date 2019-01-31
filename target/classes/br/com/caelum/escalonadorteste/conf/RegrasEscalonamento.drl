@@ -6,6 +6,7 @@ import br.com.caelum.escalonadorteste.modelo.ParametrosDeEscalonamento
 import br.com.caelum.escalonadorteste.modelo.Turma
 import br.com.caelum.escalonadorteste.modelo.Instrutor
 import br.com.caelum.escalonadorteste.modelo.Curso
+import br.com.caelum.escalonadorteste.modelo.Periodo
 
 import java.util.ArrayList;
 
@@ -28,6 +29,16 @@ end
 rule "não está disponível nos dias da turma"
 	when
 		Turma(instrutor != null, !instrutor.estaDisponivelNosDiasDaTurma(this))
+	then
+		scoreHolder.addHardConstraintMatch(kcontext, -10);
+end
+
+rule "pegou integral e noturno simultaneamente"
+	when
+		$outraTurma : Turma($instrutor : instrutor != null, periodo == Periodo.INTEGRAL)
+		Turma(instrutor == $instrutor, 
+			periodo == Periodo.NOTURNO, 
+			dataDeInicio.equals($outraTurma.dataDeInicio) || dataDeInicio.equals($outraTurma.dataDeInicio.plusWeeks(1)))
 	then
 		scoreHolder.addHardConstraintMatch(kcontext, -10);
 end
