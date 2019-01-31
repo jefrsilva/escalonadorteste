@@ -2,11 +2,8 @@ package br.com.caelum.escalonadorteste;
 
 import java.util.List;
 
-import org.optaplanner.core.api.score.constraint.ConstraintMatch;
-import org.optaplanner.core.api.score.constraint.ConstraintMatchTotal;
 import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
-import org.optaplanner.core.impl.score.director.ScoreDirector;
 
 import br.com.caelum.escalonadorteste.alocacao.AlocacaoDeInstrutores;
 import br.com.caelum.escalonadorteste.cweb.TurmasCWebHelper;
@@ -81,22 +78,25 @@ public class Escalonador {
 
 		System.out.println(solver.explainBestScore());
 
-//		ScoreDirector<AlocacaoDeInstrutores> scoreDirector = solver.getScoreDirectorFactory().buildScoreDirector();
-//		scoreDirector.setWorkingSolution(alocacao);
-//		for (ConstraintMatchTotal constraintMatchTotal : scoreDirector.getConstraintMatchTotals()) {
-//			System.out.println("ID: " + constraintMatchTotal.getConstraintId());
-//			System.out.println("Name: " + constraintMatchTotal.getConstraintName());
-//			System.out.println("Package: " + constraintMatchTotal.getConstraintPackage());
-//			for (ConstraintMatch match : constraintMatchTotal.getConstraintMatchSet()) {
-//				System.out.println("\tID: " + match.getConstraintId());
-//				System.out.println("\tName: " + match.getConstraintName());
-//				System.out.println("\tPackage: " + match.getConstraintPackage());
-//				System.out.println("\tId String: " + match.getIdentificationString());
-//				for (Object justification : match.getJustificationList()) {
-//					System.out.println("\t\tJustification: " + justification);
-//				}
-//			}
-//		}
+		// ScoreDirector<AlocacaoDeInstrutores> scoreDirector =
+		// solver.getScoreDirectorFactory().buildScoreDirector();
+		// scoreDirector.setWorkingSolution(alocacao);
+		// for (ConstraintMatchTotal constraintMatchTotal :
+		// scoreDirector.getConstraintMatchTotals()) {
+		// System.out.println("ID: " + constraintMatchTotal.getConstraintId());
+		// System.out.println("Name: " + constraintMatchTotal.getConstraintName());
+		// System.out.println("Package: " +
+		// constraintMatchTotal.getConstraintPackage());
+		// for (ConstraintMatch match : constraintMatchTotal.getConstraintMatchSet()) {
+		// System.out.println("\tID: " + match.getConstraintId());
+		// System.out.println("\tName: " + match.getConstraintName());
+		// System.out.println("\tPackage: " + match.getConstraintPackage());
+		// System.out.println("\tId String: " + match.getIdentificationString());
+		// for (Object justification : match.getJustificationList()) {
+		// System.out.println("\t\tJustification: " + justification);
+		// }
+		// }
+		// }
 
 		return alocacao;
 	}

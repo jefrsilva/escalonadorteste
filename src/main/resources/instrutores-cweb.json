@@ -10,11 +10,14 @@
 	 		"FJ-59"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Andreza Luchini",
@@ -23,11 +26,14 @@
 	 		"WD-43"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Artur Adam",
@@ -40,11 +46,14 @@
 	 		"JS-45-20hs"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Gabriel Ferreira",
@@ -53,11 +62,14 @@
 	 		"FN-23"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Lucas Sampaio",
@@ -69,11 +81,14 @@
 	 		"FJ-38"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Matheus Marcus",
@@ -81,11 +96,14 @@
 	 		"WD-43"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Mário Souto",
@@ -98,11 +116,14 @@
 	 		"JS-56"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Thais André",
@@ -112,11 +133,14 @@
 	 		"FJ-27"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Vanessa Tonini",
@@ -128,11 +152,14 @@
 	 		"JS-45"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	{
 		"nome": "Wanderson Sabino",
@@ -141,11 +168,14 @@
 	 		"JS-45-20hs"
 	 	],
 	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "false"
 	},
 	
 
@@ -162,7 +192,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Allan Romanato",
@@ -175,7 +206,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Anderson Galeote",
@@ -187,7 +219,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Carlos Savi",
@@ -198,7 +231,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Danilo Leite",
@@ -210,7 +244,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Fernando Furtado",
@@ -226,7 +261,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Guilherme Romão",
@@ -239,7 +275,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Henrique Lopes",
@@ -251,7 +288,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Ítalo Moraes",
@@ -263,7 +301,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Jhonatan Jacinto",
@@ -276,7 +315,8 @@
 	 		"INTEGRAL",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Leonardo Souza",
@@ -290,7 +330,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Letícia Costa",
@@ -301,7 +342,8 @@
 	 	"periodos": [
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Lucas César",
@@ -312,7 +354,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Lucas Furlaneto",
@@ -323,7 +366,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Newton Beck",
@@ -335,7 +379,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Priscila Sonnesso",
@@ -346,7 +391,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Rita Cury",
@@ -358,7 +404,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "true"
+	 	"podeViajar": "true",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Robson Pantolfi",
@@ -370,7 +417,8 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
+	 	"podeViajar": "false",
+	 	"externo": "true"
 	},
 	{
 		"nome": "Thiago Andrade",
@@ -380,6 +428,20 @@
 	 	"periodos": [
 	 		"SABADO"
 	 	],
-	 	"podeViajar": "false"
-	}
+	 	"podeViajar": "false",
+	 	"externo": "true"
+	},
+	
+	{
+		"nome": "Rodrigo Ferreira",
+	 	"cursos": [
+	 		"SE-39"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL"
+	 	],
+	 	"podeViajar": "true",
+	 	"externo": "false"
+	}	
+	
 ]

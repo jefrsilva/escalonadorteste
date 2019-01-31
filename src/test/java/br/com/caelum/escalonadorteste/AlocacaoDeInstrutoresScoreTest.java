@@ -63,9 +63,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorNaoPodeDarAulaNoPeriodo() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -98,11 +98,15 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorEstaIndisponivelNosDiasDaTurma() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Arrays.asList(
-						new Intervalo(LocalDateTime.of(2018, 11, 27, 18, 0), LocalDateTime.of(2018, 11, 28, 8, 0))));
+				false,
+				Arrays.asList(
+						new Intervalo(LocalDateTime.of(2018, 11, 27, 18, 0), LocalDateTime.of(2018, 11, 28, 8, 0))),
+				false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
-				false, Arrays.asList(
-						new Intervalo(LocalDateTime.of(2018, 11, 27, 0, 0), LocalDateTime.of(2018, 11, 27, 23, 59))));
+				false,
+				Arrays.asList(
+						new Intervalo(LocalDateTime.of(2018, 11, 27, 0, 0), LocalDateTime.of(2018, 11, 27, 23, 59))),
+				false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -135,13 +139,16 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorPegouMuitasHorasDeAula() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
+		Instrutor instrutor3 = new Instrutor("Instrutor C", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
+				false, Collections.emptyList(), true);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
 		instrutores.add(instrutor2);
+		instrutores.add(instrutor3);
 
 		List<Curso> cursos = Arrays.asList(new Curso("Curso 1", 40));
 
@@ -171,14 +178,19 @@ public class AlocacaoDeInstrutoresScoreTest {
 		// Um instrutor para todas aulas, carga horária > 60
 		turma2.setInstrutor(instrutor1);
 		verificador.assertSoftWeight(nomeDaRegra, -10, alocacao);
+
+		// Um instrutor externo para todas aulas, carga horária > 60
+		turma1.setInstrutor(instrutor3);
+		turma2.setInstrutor(instrutor3);
+		verificador.assertSoftWeight(nomeDaRegra, 0, alocacao);
 	}
 
 	@Test
 	public void instrutorPegouDuasTurmasSimultaneas() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"),
-				Arrays.asList(Periodo.MANHA, Periodo.TARDE, Periodo.INTEGRAL), false, Collections.emptyList());
+				Arrays.asList(Periodo.MANHA, Periodo.TARDE, Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -243,13 +255,16 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorPegouMuitasTurmasSeguidas() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
+		Instrutor instrutor3 = new Instrutor("Instrutor C", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
+				false, Collections.emptyList(), true);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
 		instrutores.add(instrutor2);
+		instrutores.add(instrutor3);
 
 		List<Curso> cursos = Arrays.asList(new Curso("Curso 1", 40));
 
@@ -279,14 +294,19 @@ public class AlocacaoDeInstrutoresScoreTest {
 		// Um único instrutor pegou as 2 turmas (> limite de 1 turma seguida)
 		turma2.setInstrutor(instrutor1);
 		verificador.assertSoftWeight(nomeDaRegra, -10, alocacao);
+
+		// Um único instrutor externo pegou as 2 turmas (> limite de 1 turma seguida)
+		turma1.setInstrutor(instrutor3);
+		turma2.setInstrutor(instrutor3);
+		verificador.assertSoftWeight(nomeDaRegra, 0, alocacao);
 	}
 
 	@Test
 	public void instrutorPlanejadoParaOCursoFoiTrocado() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -320,9 +340,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorNaoEstaDisponivelParaViagem() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				true, Collections.emptyList());
+				true, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -355,9 +375,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorNaoPodeDarIntegralENoturnoSimultaneamente() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
-				false, Collections.emptyList());
+				false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);

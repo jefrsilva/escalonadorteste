@@ -48,7 +48,7 @@ end
 rule "mais de X horas de aula"
 	when
 		$parametros : ParametrosDeEscalonamento()
-		$instrutor : Instrutor()
+		$instrutor : Instrutor(!isExterno())
 		Number(intValue > $parametros.numeroMaximoDeHorasPorInstrutor) from 
 			accumulate($turma : Turma(instrutor == $instrutor) and $curso : Curso(codigo == $turma.codigoCurso); sum($curso.getCargaHoraria())) 
 	then
@@ -66,7 +66,7 @@ end
 rule "mais de X turmas seguidas"
 	when
 		$parametros : ParametrosDeEscalonamento()
-		$instrutor : Instrutor()
+		$instrutor : Instrutor(!isExterno())
 		Number(intValue > $parametros.numeroMaximoDeTurmasSeguidas) from
 			accumulate($turma : Turma(instrutor == $instrutor); maximoDeTurmasSeguidas($turma))
 	then

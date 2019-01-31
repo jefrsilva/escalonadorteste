@@ -20,12 +20,16 @@ public class Instrutor {
 
 	@JsonProperty("indisponibilidades")
 	private List<Intervalo> datasIndisponiveis = Collections.emptyList();
+	
+	@JsonProperty("externo")
+	private boolean externo;
 
 	@JsonCreator
 	public Instrutor(@JsonProperty("nome") String nome, @JsonProperty("cursos") List<String> cursosConhecidos,
 			@JsonProperty("periodos") List<Periodo> periodosViaveis,
 			@JsonProperty("podeViajar") boolean disponivelParaViagem,
-			@JsonProperty("indisponibilidades") List<Intervalo> datasIndisponiveis) {
+			@JsonProperty("indisponibilidades") List<Intervalo> datasIndisponiveis,
+			@JsonProperty("externo") boolean externo) {
 		this.nome = nome;
 		this.cursosConhecidos = cursosConhecidos;
 		this.periodosViaveis = periodosViaveis;
@@ -33,6 +37,7 @@ public class Instrutor {
 		if (datasIndisponiveis != null) {
 			this.datasIndisponiveis = datasIndisponiveis;
 		}
+		this.externo = externo;
 	}
 
 	public String getNome() {
@@ -62,6 +67,10 @@ public class Instrutor {
 			}
 		}
 		return estaDisponivel;
+	}
+	
+	public boolean isExterno() {
+		return externo;
 	}
 
 	@Override
