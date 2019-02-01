@@ -81,7 +81,6 @@ public class TurmasCWebHelper {
 	private List<LocalDate> geraDiasDeAula(String codigoCurso, Periodo periodo, LocalDate primeiroDia,
 			LocalDate ultimoDia) {
 		List<LocalDate> diasDeAula = new ArrayList<>();
-		System.out.println(codigoCurso);
 		int cargaHoraria = cursos.get(codigoCurso).getCargaHoraria();
 		LocalDate diaDaAula = LocalDate.from(primeiroDia);
 

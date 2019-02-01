@@ -14,6 +14,7 @@ public class InstrutoresHelper {
 
 	public List<Instrutor> constroiListaAPartirDeJSON(String json) {
 		ObjectMapper mapper = new ObjectMapper();
+		mapper.findAndRegisterModules();
 		try {
 			List<Instrutor> instrutores = mapper.readValue(json, new TypeReference<List<Instrutor>>() {
 			});

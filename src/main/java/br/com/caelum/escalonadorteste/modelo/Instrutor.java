@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Instrutor {
+	@JsonProperty("nome")
 	private String nome;
 
 	@JsonProperty("cursos")

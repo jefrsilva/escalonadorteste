@@ -20,7 +20,7 @@ public class ParametrosDeEscalonamento {
 	private HardSoftScore pegouIntegralENoturnoSimultaneamente = HardSoftScore.ofHard(10);
 	
 	@ConstraintWeight("mais de X horas de aula")
-	private HardSoftScore maisDeXHorasDeAula = HardSoftScore.ofSoft(10);
+	private HardSoftScore maisDeXHorasDeAula = HardSoftScore.ofSoft(1);
 	
 	@ConstraintWeight("data de um curso conflita com outro")
 	private HardSoftScore dataDeUmCursoConflitaComOutro = HardSoftScore.ofHard(10);

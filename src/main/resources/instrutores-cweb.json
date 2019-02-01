@@ -32,6 +32,12 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
+	 	"indisponibilidades": [
+	 		{
+	 			"inicio": "2019-02-20T00:00",
+	 			"termino": "2019-03-01T23:59"
+	 		}
+	 	],
 	 	"podeViajar": "true",
 	 	"externo": "false"
 	},
@@ -51,6 +57,30 @@
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
+	 	],
+	 	"podeViajar": "true",
+	 	"externo": "false"
+	},
+	{
+		"nome": "Fernando Furtado",
+	 	"cursos": [
+	 		"FJ-22",
+	 		"FJ-27",
+	 		"FJ-36",
+	 		"FJ-38",
+	 		"FJ-91",
+	 		"IP-67"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"indisponibilidades": [
+	 		{
+ 				"inicio": "2019-01-01T00:00",
+ 				"termino": "2019-02-17T23:59"
+	 		}
 	 	],
 	 	"podeViajar": "true",
 	 	"externo": "false"
@@ -86,6 +116,12 @@
 	 		"INTEGRAL",
 	 		"NOTURNO",
 	 		"SABADO"
+	 	],
+	 	"indisponibilidades": [
+	 		{
+	 			"inicio": "2019-02-23T00:00",
+	 			"termino": "2019-03-08T23:59"
+	 		}
 	 	],
 	 	"podeViajar": "true",
 	 	"externo": "false"
@@ -130,7 +166,8 @@
 	 	"cursos": [
 	 		"FJ-11",
 	 		"FJ-21",
-	 		"FJ-27"
+	 		"FJ-27",
+	 		"PY-14"
 	 	],
 	 	"periodos": [
 	 		"MANHA",
@@ -248,7 +285,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Fernando Furtado",
+		"nome": "Fernando Furtado (Externo)",
 	 	"cursos": [
 	 		"FJ-22",
 	 		"FJ-27",
@@ -260,6 +297,12 @@
 	 	"periodos": [
 	 		"NOTURNO",
 	 		"SABADO"
+	 	],
+	 	"indisponibilidades": [
+	 		{
+ 				"inicio": "2019-02-18T00:00",
+ 				"termino": "2025-01-01T00:00"
+	 		}
 	 	],
 	 	"podeViajar": "false",
 	 	"externo": "true"
@@ -361,6 +404,20 @@
 		"nome": "Lucas Furlaneto",
 	 	"cursos": [
 	 		"FJ-21"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false",
+	 	"externo": "true"
+	},
+	{
+		"nome": "Matheus Brandino",
+	 	"cursos": [
+	 		"FJ-22",
+	 		"FJ-57",
+	 		"FJ-59"
 	 	],
 	 	"periodos": [
 	 		"NOTURNO",

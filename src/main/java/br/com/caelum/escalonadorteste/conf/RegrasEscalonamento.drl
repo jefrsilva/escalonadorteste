@@ -49,10 +49,10 @@ rule "mais de X horas de aula"
 	when
 		$parametros : ParametrosDeEscalonamento()
 		$instrutor : Instrutor(!isExterno())
-		Number(intValue > $parametros.numeroMaximoDeHorasPorInstrutor) from 
+		Number($horas : intValue > $parametros.numeroMaximoDeHorasPorInstrutor) from 
 			accumulate($turma : Turma(instrutor == $instrutor) and $curso : Curso(codigo == $turma.codigoCurso); sum($curso.getCargaHoraria())) 
 	then
-		scoreHolder.penalize(kcontext);
+		scoreHolder.penalize(kcontext, $horas - $parametros.getNumeroMaximoDeHorasPorInstrutor());
 end
 
 rule "data de um curso conflita com outro"

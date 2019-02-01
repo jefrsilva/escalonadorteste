@@ -43,8 +43,6 @@ public class AlocacaoDeInstrutoresScoreTest {
 		TurmasHelper turmasHelper = new TurmasHelper();
 		List<Turma> turmas = turmasHelper.constroiListaAPartirDeJSON(jsonTurmas);
 
-		Turma turmaIntegral = turmas.get(0);
-
 		String nomeDaRegra = "não sabe dar o curso";
 		AlocacaoDeInstrutores alocacao = new AlocacaoDeInstrutores(turmas, instrutores, cursos, 60, 3);
 
@@ -177,7 +175,7 @@ public class AlocacaoDeInstrutoresScoreTest {
 
 		// Um instrutor para todas aulas, carga horária > 60
 		turma2.setInstrutor(instrutor1);
-		verificador.assertSoftWeight(nomeDaRegra, -10, alocacao);
+		verificador.assertSoftWeight(nomeDaRegra, -20, alocacao);
 
 		// Um instrutor externo para todas aulas, carga horária > 60
 		turma1.setInstrutor(instrutor3);
