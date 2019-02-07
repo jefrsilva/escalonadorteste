@@ -48,7 +48,7 @@ public class Turma {
 	public List<Aula> getAulas() {
 		return aulas;
 	}
-	
+
 	public boolean ehViagem() {
 		return ehViagem;
 	}
@@ -88,7 +88,7 @@ public class Turma {
 	public void setFixo(boolean fixo) {
 		this.fixo = fixo;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Turma [codigoCurso=" + codigoCurso + ", periodo=" + periodo + ", instrutor=" + instrutor
@@ -125,5 +125,23 @@ public class Turma {
 			}
 		}
 		return conflitou;
+	}
+
+	public boolean aulasConflitamComViagens(Turma turmaComViagem) {
+		if (turmaComViagem.ehViagem()) {
+			LocalDate diaDaViagemDeIda = turmaComViagem.getDataDeInicio().minusDays(1);
+			LocalDate diaDaViagemDeVolta = turmaComViagem.getDataDeTermino().plusDays(2);
+
+			Intervalo intervaloDaViagem = new Intervalo(diaDaViagemDeIda.atStartOfDay(),
+					diaDaViagemDeVolta.atStartOfDay());
+			for (Aula aula : aulas) {
+				if (intervaloDaViagem.contem(aula.getInstanteInicial())
+						|| intervaloDaViagem.contem(aula.getInstanteInicial())) {
+					return true;
+				}
+			}
+		}
+
+		return false;
 	}
 }

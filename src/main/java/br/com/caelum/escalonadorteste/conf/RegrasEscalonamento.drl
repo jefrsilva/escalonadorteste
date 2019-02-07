@@ -86,3 +86,11 @@ rule "instrutor não está disponível para viagem"
 	then
 		scoreHolder.penalize(kcontext); 		
 end
+
+rule "aula de sábado durante ou logo após viagem"
+	when
+		$turmaViagem : Turma($instrutor : instrutor != null, ehViagem)
+		Turma(this != $turmaViagem, instrutor == $instrutor, aulasConflitamComViagens($turmaViagem))
+	then
+		scoreHolder.penalize(kcontext);
+end 

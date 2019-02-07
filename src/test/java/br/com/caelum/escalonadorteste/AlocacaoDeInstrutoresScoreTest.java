@@ -412,4 +412,44 @@ public class AlocacaoDeInstrutoresScoreTest {
 		turma2.setInstrutor(instrutor1);
 		verificador.assertHardWeight(nomeDaRegra, -10, alocacao);
 	}
+
+	@Test
+	public void aulasConflitamComDiasDeViagens() {
+		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL, Periodo.SABADO),
+				true, Collections.emptyList(), false);
+		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL, Periodo.SABADO),
+				true, Collections.emptyList(), false);
+
+		List<Instrutor> instrutores = new ArrayList<>();
+		instrutores.add(instrutor1);
+		instrutores.add(instrutor2);
+
+		List<Curso> cursos = Arrays.asList(new Curso("Curso 1", 20));
+
+		List<Turma> turmas = new ArrayList<>();
+		Turma turma1 = new Turma("Curso 1", Periodo.INTEGRAL,
+				Arrays.asList(LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 27), LocalDate.of(2018, 11, 28)),
+				true);
+		Turma turma2 = new Turma("Curso 1", Periodo.SABADO,
+				Arrays.asList(LocalDate.of(2018, 12, 1), LocalDate.of(2018, 12, 8), LocalDate.of(2018, 12, 15),
+						LocalDate.of(2018, 12, 22), LocalDate.of(2018, 11, 29)),
+				false);
+		turmas.add(turma1);
+		turmas.add(turma2);
+
+		String nomeDaRegra = "aula de sábado durante ou logo após viagem";
+		AlocacaoDeInstrutores alocacao = new AlocacaoDeInstrutores(turmas, instrutores, cursos, 60, 3);
+
+		// Alocação vazia
+		verificador.assertHardWeight(nomeDaRegra, 0, alocacao);
+
+		// Um instrutor viaja e o outro dá a aula de sábado
+		turma1.setInstrutor(instrutor1);
+		turma2.setInstrutor(instrutor2);
+		verificador.assertHardWeight(nomeDaRegra, 0, alocacao);
+
+		// O mesmo instrutor viaja e na volta já tem aula de sábado
+		turma2.setInstrutor(instrutor1);
+		verificador.assertHardWeight(nomeDaRegra, -10, alocacao);
+	}
 }

@@ -33,6 +33,9 @@ public class ParametrosDeEscalonamento {
 	
 	@ConstraintWeight("instrutor não está disponível para viagem")
 	private HardSoftScore instrutorNaoEstaDisponivelParaViagem = HardSoftScore.ofHard(10);
+	
+	@ConstraintWeight("aula de sábado durante ou logo após viagem")
+	private HardSoftScore aulaDeSabadoDuranteOuAposViagem = HardSoftScore.ofHard(10);
 
 	private int numeroMaximoDeHorasPorInstrutor;
 	private int numeroMaximoDeTurmasSeguidas;

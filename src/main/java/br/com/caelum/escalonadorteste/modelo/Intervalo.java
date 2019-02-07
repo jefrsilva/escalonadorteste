@@ -1,5 +1,6 @@
 package br.com.caelum.escalonadorteste.modelo;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -28,5 +29,4 @@ public class Intervalo {
 	public boolean contem(LocalDateTime instante) {
 		return !(instante.isBefore(instanteInicial) || instante.isAfter(instanteFinal));
 	}
-
 }

@@ -62,30 +62,6 @@
 	 	"externo": "false"
 	},
 	{
-		"nome": "Fernando Furtado",
-	 	"cursos": [
-	 		"FJ-22",
-	 		"FJ-27",
-	 		"FJ-36",
-	 		"FJ-38",
-	 		"FJ-91",
-	 		"IP-67"
-	 	],
-	 	"periodos": [
-	 		"INTEGRAL",
-	 		"NOTURNO",
-	 		"SABADO"
-	 	],
-	 	"indisponibilidades": [
-	 		{
- 				"inicio": "2019-01-01T00:00",
- 				"termino": "2019-02-17T23:59"
-	 		}
-	 	],
-	 	"podeViajar": "true",
-	 	"externo": "false"
-	},
-	{
 		"nome": "Gabriel Ferreira",
 	 	"cursos": [
 	 		"FN-13",
@@ -285,7 +261,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Fernando Furtado (Externo)",
+		"nome": "Fernando Furtado",
 	 	"cursos": [
 	 		"FJ-22",
 	 		"FJ-27",
