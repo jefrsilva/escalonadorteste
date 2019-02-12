@@ -1,6 +1,7 @@
 package br.com.caelum.escalonadorteste.modelo;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,18 +24,24 @@ public class Turma {
 	private Instrutor instrutorPlanejado;
 	private boolean fixo;
 
+	private List<String> instrutoresRestritos = new ArrayList<>();
+
 	public Turma() {
 	}
 
 	@JsonCreator
 	public Turma(@JsonProperty("codigoCurso") String codigoCurso, @JsonProperty("periodo") Periodo periodo,
-			@JsonProperty("diasDeAula") List<LocalDate> diasDeAula, @JsonProperty("ehViagem") boolean ehViagem) {
+			@JsonProperty("diasDeAula") List<LocalDate> diasDeAula, @JsonProperty("ehViagem") boolean ehViagem,
+			@JsonProperty("instrutoresRestritos") List<String> instrutoresRestritos) {
 		this.codigoCurso = codigoCurso;
 		this.periodo = periodo;
 		this.ehViagem = ehViagem;
 		this.aulas = diasDeAula.stream().map(dia -> new Aula(dia.atTime(this.periodo.getHoraDeInicio()),
 				dia.atTime(this.periodo.getHoraDeTermino()))).collect(Collectors.toList());
 		this.aulas.sort((umaData, outraData) -> umaData.getInstanteInicial().compareTo(outraData.getInstanteInicial()));
+		if (instrutoresRestritos != null) {
+			this.instrutoresRestritos = instrutoresRestritos;
+		}
 	}
 
 	public String getCodigoCurso() {
@@ -89,10 +96,23 @@ public class Turma {
 		this.fixo = fixo;
 	}
 
+	public List<String> getInstrutoresRestritos() {
+		return instrutoresRestritos;
+	}
+
 	@Override
 	public String toString() {
 		return "Turma [codigoCurso=" + codigoCurso + ", periodo=" + periodo + ", instrutor=" + instrutor
 				+ ", getDataDeInicio()=" + getDataDeInicio() + ", getDataDeTermino()=" + getDataDeTermino() + "]";
+	}
+
+	public boolean instrutorEstaRestrito(Instrutor instrutorAVerificar) {
+		for (String nome : instrutoresRestritos) {
+			if (nome.equals(instrutorAVerificar.getNome())) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public boolean aulasConflitamCom(Turma turma) {

@@ -94,3 +94,10 @@ rule "aula de sábado durante ou logo após viagem"
 	then
 		scoreHolder.penalize(kcontext);
 end 
+
+rule "instrutor está restrito para a turma"
+	when
+		Turma($instrutor : instrutor != null, instrutorEstaRestrito($instrutor))
+	then
+		scoreHolder.penalize(kcontext);
+end

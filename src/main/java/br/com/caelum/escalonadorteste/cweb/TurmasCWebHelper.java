@@ -73,9 +73,9 @@ public class TurmasCWebHelper {
 				turmaCWeb.getUltimoDia());
 		boolean ehViagem = false;
 		if (turmaCWeb.getCidade() != null) {
-			ehViagem = !turmaCWeb.getCidade().equals("Sao Paulo");	
+			ehViagem = !turmaCWeb.getCidade().equals("Sao Paulo");
 		}
-		return new Turma(codigoCurso, periodo, diasDeAula, ehViagem);
+		return new Turma(codigoCurso, periodo, diasDeAula, ehViagem, turmaCWeb.getInstrutoresRestritos());
 	}
 
 	private List<LocalDate> geraDiasDeAula(String codigoCurso, Periodo periodo, LocalDate primeiroDia,

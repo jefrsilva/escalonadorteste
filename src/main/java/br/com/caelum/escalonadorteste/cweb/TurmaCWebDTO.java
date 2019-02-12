@@ -1,6 +1,7 @@
 package br.com.caelum.escalonadorteste.cweb;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -16,6 +17,7 @@ public class TurmaCWebDTO {
 	private String codigoCurso;
 	private String cidade;
 	private boolean incompany;
+	private List<String> instrutoresRestritos;
 
 	public Integer getId() {
 		return id;
@@ -81,4 +83,11 @@ public class TurmaCWebDTO {
 		this.incompany = incompany;
 	}
 
+	public List<String> getInstrutoresRestritos() {
+		return instrutoresRestritos;
+	}
+
+	public void setInstrutoresRestritos(List<String> instrutoresRestritos) {
+		this.instrutoresRestritos = instrutoresRestritos;
+	}
 }

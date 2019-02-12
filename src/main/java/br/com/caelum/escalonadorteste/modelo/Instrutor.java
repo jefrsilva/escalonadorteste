@@ -1,6 +1,6 @@
 package br.com.caelum.escalonadorteste.modelo;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -20,8 +20,8 @@ public class Instrutor {
 	private boolean disponivelParaViagem;
 
 	@JsonProperty("indisponibilidades")
-	private List<Intervalo> datasIndisponiveis = Collections.emptyList();
-	
+	private List<Intervalo> datasIndisponiveis = new ArrayList<>();
+
 	@JsonProperty("externo")
 	private boolean externo;
 
@@ -69,7 +69,7 @@ public class Instrutor {
 		}
 		return estaDisponivel;
 	}
-	
+
 	public boolean isExterno() {
 		return externo;
 	}
