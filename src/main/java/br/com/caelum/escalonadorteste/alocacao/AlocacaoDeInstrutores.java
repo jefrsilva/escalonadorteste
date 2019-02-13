@@ -23,6 +23,9 @@ public class AlocacaoDeInstrutores {
 	private List<Instrutor> instrutores = new ArrayList<>();
 	private List<Curso> cursos = new ArrayList<>();
 
+	@PlanningEntityCollectionProperty
+	private List<Turma> turmas = new ArrayList<>();
+
 	@ConstraintConfigurationProvider
 	private ParametrosDeEscalonamento parametrosDeEscalonamento;
 
@@ -38,9 +41,6 @@ public class AlocacaoDeInstrutores {
 				numeroMaximoDeTurmasSeguidas);
 	}
 
-	@PlanningEntityCollectionProperty
-	private List<Turma> turmas = new ArrayList<>();
-
 	public List<Turma> getTurmas() {
 		return turmas;
 	}
@@ -51,8 +51,6 @@ public class AlocacaoDeInstrutores {
 		return instrutores;
 	}
 
-	@ValueRangeProvider(id = "listaDeCursos")
-	@ProblemFactCollectionProperty
 	public List<Curso> getCursos() {
 		return cursos;
 	}
