@@ -10,7 +10,9 @@ import br.com.caelum.escalonadorteste.modelo.Instrutor
 import br.com.caelum.escalonadorteste.modelo.Curso
 import br.com.caelum.escalonadorteste.modelo.Periodo
 
-import java.util.ArrayList;
+import java.util.ArrayList
+
+import accumulate br.com.caelum.escalonadorteste.funcao.AcumuladorDeMaximoDeTurmasSeguidas maximoDeTurmasSeguidas
 
 global HardSoftScoreHolder scoreHolder;
 
