@@ -6,7 +6,7 @@
   <!-- Score configuration -->
   <scoreDirectorFactory>
     <!--<easyScoreCalculatorClass>br.com.caelum.escalonadorteste.modelo.CalculadorDeScoreDeAlocacao</easyScoreCalculatorClass>-->
-    <scoreDrl>br/com/caelum/escalonadorteste/conf/RegrasEscalonamento.drl</scoreDrl>
+    <scoreDrl>escalonador/conf/RegrasEscalonamento.drl</scoreDrl>
   </scoreDirectorFactory>
 
   <!-- Optimization algorithms configuration -->

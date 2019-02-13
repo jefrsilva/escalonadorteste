@@ -117,7 +117,7 @@ public class Escalonador {
 
 	public AlocacaoDeInstrutores executa(AlocacaoDeInstrutores alocacaoPrevia) {
 		SolverFactory<AlocacaoDeInstrutores> solverFactory = SolverFactory
-				.createFromXmlResource("br/com/caelum/escalonadorteste/conf/alocacaoSolverConfig.xml");
+				.createFromXmlResource("escalonador/conf/alocacaoSolverConfig.xml");
 		Solver<AlocacaoDeInstrutores> solver = solverFactory.buildSolver();
 
 		if (alocacaoPrevia != null) {

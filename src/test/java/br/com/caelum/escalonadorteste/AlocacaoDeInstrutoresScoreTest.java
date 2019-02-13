@@ -25,7 +25,7 @@ import br.com.caelum.escalonadorteste.modelo.Turma;
 public class AlocacaoDeInstrutoresScoreTest {
 
 	private HardSoftScoreVerifier<AlocacaoDeInstrutores> verificador = new HardSoftScoreVerifier<>(
-			SolverFactory.createFromXmlResource("br/com/caelum/escalonadorteste/conf/alocacaoSolverConfig.xml"));
+			SolverFactory.createFromXmlResource("escalonador/conf/alocacaoSolverConfig.xml"));
 
 	@Test
 	public void instrutorNaoSabeDarOCurso() {
