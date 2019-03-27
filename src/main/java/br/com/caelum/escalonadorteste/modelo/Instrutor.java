@@ -15,6 +15,9 @@ public class Instrutor {
 
 	@JsonProperty("periodos")
 	private List<Periodo> periodosViaveis;
+	
+	@JsonProperty("periodosPreferenciais")
+	private List<Periodo> periodosPreferenciais;
 
 	@JsonProperty("podeViajar")
 	private boolean disponivelParaViagem;
@@ -28,12 +31,14 @@ public class Instrutor {
 	@JsonCreator
 	public Instrutor(@JsonProperty("nome") String nome, @JsonProperty("cursos") List<String> cursosConhecidos,
 			@JsonProperty("periodos") List<Periodo> periodosViaveis,
+			@JsonProperty("periodosPreferenciais") List<Periodo> periodosPreferenciais,
 			@JsonProperty("podeViajar") boolean disponivelParaViagem,
 			@JsonProperty("indisponibilidades") List<Intervalo> datasIndisponiveis,
 			@JsonProperty("externo") boolean externo) {
 		this.nome = nome;
 		this.cursosConhecidos = cursosConhecidos;
 		this.periodosViaveis = periodosViaveis;
+		this.periodosPreferenciais = periodosPreferenciais;
 		this.disponivelParaViagem = disponivelParaViagem;
 		if (datasIndisponiveis != null) {
 			this.datasIndisponiveis = datasIndisponiveis;
@@ -51,6 +56,10 @@ public class Instrutor {
 
 	public boolean consegueDarAulaNoPeriodo(Turma turma) {
 		return periodosViaveis.contains(turma.getPeriodo());
+	}
+	
+	public boolean prefereDarAulaNoPeriodo(Turma turma) {
+		return periodosPreferenciais.contains(turma.getPeriodo());
 	}
 
 	public boolean estaDisponivelParaViagem() {
@@ -102,6 +111,8 @@ public class Instrutor {
 	@Override
 	public String toString() {
 		return "Instrutor [nome=" + nome + ", cursosConhecidos=" + cursosConhecidos + ", periodosViaveis="
-				+ periodosViaveis + "]";
+				+ periodosViaveis + ", periodosPreferenciais=" + periodosPreferenciais + ", disponivelParaViagem="
+				+ disponivelParaViagem + ", datasIndisponiveis=" + datasIndisponiveis + ", externo=" + externo + "]";
 	}
+	
 }

@@ -7,6 +7,9 @@
 	 	"periodos": [
 	 		"INTEGRAL"
 	 	],
+	 	"periodosPreferenciais": [
+	 		"INTEGRAL"
+	 	],
 	 	"podeViajar": "false",
 	 	"indisponibilidades": []
 	},
@@ -16,6 +19,9 @@
 	 		"Curso 2"
 	 	],
 	 	"periodos": [
+	 		"INTEGRAL"
+	 	],
+	 	"periodosPreferenciais": [
 	 		"INTEGRAL"
 	 	],
 	 	"podeViajar": "false",

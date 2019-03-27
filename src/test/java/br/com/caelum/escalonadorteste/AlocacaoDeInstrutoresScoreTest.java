@@ -61,9 +61,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorNaoPodeDarAulaNoPeriodo() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.NOTURNO), false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -94,14 +94,57 @@ public class AlocacaoDeInstrutoresScoreTest {
 	}
 
 	@Test
+	public void instrutorNaoPrefereDarAulaNoPeriodo() {
+		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL, Periodo.NOTURNO),
+				Arrays.asList(Periodo.INTEGRAL, Periodo.NOTURNO), false, Collections.emptyList(), false);
+		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL, Periodo.NOTURNO),
+				Arrays.asList(Periodo.NOTURNO), false, Collections.emptyList(), false);
+
+		List<Instrutor> instrutores = new ArrayList<>();
+		instrutores.add(instrutor1);
+		instrutores.add(instrutor2);
+
+		List<Curso> cursos = Arrays.asList(new Curso("Curso 1", 40));
+
+		List<Turma> turmas = new ArrayList<>();
+		Turma turma1 = new Turma("Curso 1", Periodo.INTEGRAL,
+				Arrays.asList(LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 27), LocalDate.of(2018, 11, 28),
+						LocalDate.of(2018, 11, 29), LocalDate.of(2018, 11, 30)),
+				false, Collections.emptyList());
+		Turma turma2 = new Turma("Curso 1", Periodo.NOTURNO,
+				Arrays.asList(LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 27), LocalDate.of(2018, 11, 28),
+						LocalDate.of(2018, 11, 29), LocalDate.of(2018, 11, 30)),
+				false, Collections.emptyList());
+		turmas.add(turma1);
+		turmas.add(turma2);
+
+		String nomeDaRegra = "pegou aula em período fora dos preferenciais";
+		AlocacaoDeInstrutores alocacao = new AlocacaoDeInstrutores(turmas, instrutores, cursos, 60, 3);
+
+		// Alocação vazia
+		verificador.assertHardWeight(nomeDaRegra, 0, alocacao);
+
+		// Cada instrutor pegou uma turma no período de preferência
+		turma1.setInstrutor(instrutor1);
+		turma2.setInstrutor(instrutor2);
+		
+		verificador.assertSoftWeight(nomeDaRegra, 0, alocacao);
+
+		// Instrutor 2 prefere não dar aula no período integral
+		turma1.setInstrutor(instrutor2);
+		turma2.setInstrutor(instrutor1);
+		verificador.assertSoftWeight(nomeDaRegra, -20, alocacao);
+	}
+
+	@Test
 	public void instrutorEstaIndisponivelNosDiasDaTurma() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false,
+				Arrays.asList(Periodo.INTEGRAL), false,
 				Arrays.asList(
 						new Intervalo(LocalDateTime.of(2018, 11, 27, 18, 0), LocalDateTime.of(2018, 11, 28, 8, 0))),
 				false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
-				false,
+				Arrays.asList(Periodo.NOTURNO), false,
 				Arrays.asList(
 						new Intervalo(LocalDateTime.of(2018, 11, 27, 0, 0), LocalDateTime.of(2018, 11, 27, 23, 59))),
 				false);
@@ -137,11 +180,11 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorPegouMuitasHorasDeAula() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor3 = new Instrutor("Instrutor C", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), true);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), true);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -186,9 +229,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorPegouDuasTurmasSimultaneas() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"),
-				Arrays.asList(Periodo.MANHA, Periodo.TARDE, Periodo.INTEGRAL), false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.MANHA, Periodo.TARDE, Periodo.INTEGRAL), Arrays.asList(Periodo.MANHA, Periodo.TARDE, Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -253,11 +296,11 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorPegouMuitasTurmasSeguidas() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor3 = new Instrutor("Instrutor C", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), true);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), true);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -302,9 +345,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorPlanejadoParaOCursoFoiTrocado() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -338,9 +381,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorNaoEstaDisponivelParaViagem() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				true, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), true, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -373,9 +416,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorNaoPodeDarIntegralENoturnoSimultaneamente() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.NOTURNO),
-				false, Collections.emptyList(), false);
+				Arrays.asList(Periodo.NOTURNO), false, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -416,9 +459,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void aulasConflitamComDiasDeViagens() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL, Periodo.SABADO),
-				true, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL, Periodo.SABADO), true, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL, Periodo.SABADO),
-				true, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL, Periodo.SABADO), true, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);
@@ -456,9 +499,9 @@ public class AlocacaoDeInstrutoresScoreTest {
 	@Test
 	public void instrutorEstaRestritoParaATurma() {
 		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				true, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), true, Collections.emptyList(), false);
 		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
-				true, Collections.emptyList(), false);
+				Arrays.asList(Periodo.INTEGRAL), true, Collections.emptyList(), false);
 
 		List<Instrutor> instrutores = new ArrayList<>();
 		instrutores.add(instrutor1);

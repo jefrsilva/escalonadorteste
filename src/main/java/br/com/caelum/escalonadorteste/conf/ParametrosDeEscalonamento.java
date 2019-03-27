@@ -13,6 +13,9 @@ public class ParametrosDeEscalonamento {
 	@ConstraintWeight("não consegue dar aula no período")
 	private HardSoftScore naoConsegueDarAulaNoPeriodo = HardSoftScore.ofHard(10);
 	
+	@ConstraintWeight("pegou aula em período fora dos preferenciais")
+	private HardSoftScore naoPrefereDarAulaNoPeriodo = HardSoftScore.ofSoft(20);
+	
 	@ConstraintWeight("não está disponível nos dias da turma")
 	private HardSoftScore naoEstaDisponivelNosDiasDaTurma = HardSoftScore.ofHard(10);
 	

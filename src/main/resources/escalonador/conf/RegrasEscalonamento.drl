@@ -30,6 +30,13 @@ rule "não consegue dar aula no período"
         scoreHolder.penalize(kcontext);
 end
 
+rule "pegou aula em período fora dos preferenciais"
+	when
+		Turma(instrutor != null, !instrutor.prefereDarAulaNoPeriodo(this))
+	then
+		scoreHolder.penalize(kcontext);
+end
+
 rule "não está disponível nos dias da turma"
 	when
 		Turma(instrutor != null, !instrutor.estaDisponivelNosDiasDaTurma(this))
@@ -54,6 +61,7 @@ rule "mais de X horas de aula"
 		Number($horas : intValue > $parametros.numeroMaximoDeHorasPorInstrutor) from 
 			accumulate($turma : Turma(instrutor == $instrutor) and $curso : Curso(codigo == $turma.codigoCurso); sum($curso.getCargaHoraria())) 
 	then
+		System.out.println("Excedeu as horas:" + $horas);
 		scoreHolder.penalize(kcontext, $horas - $parametros.getNumeroMaximoDeHorasPorInstrutor());
 end
 
