@@ -51,6 +51,8 @@ public class AlocacaoDeInstrutores {
 		return instrutores;
 	}
 
+	@ValueRangeProvider(id = "listaDeCursos")	
+	@ProblemFactCollectionProperty
 	public List<Curso> getCursos() {
 		return cursos;
 	}

@@ -61,7 +61,6 @@ rule "mais de X horas de aula"
 		Number($horas : intValue > $parametros.numeroMaximoDeHorasPorInstrutor) from 
 			accumulate($turma : Turma(instrutor == $instrutor) and $curso : Curso(codigo == $turma.codigoCurso); sum($curso.getCargaHoraria())) 
 	then
-		System.out.println("Excedeu as horas:" + $horas);
 		scoreHolder.penalize(kcontext, $horas - $parametros.getNumeroMaximoDeHorasPorInstrutor());
 end
 
