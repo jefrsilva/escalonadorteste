@@ -529,4 +529,69 @@ public class AlocacaoDeInstrutoresScoreTest {
 		turma1.setInstrutor(instrutor2);
 		verificador.assertHardWeight(nomeDaRegra, -10, alocacao);
 	}
+
+	@Test
+	public void horasDeAulaNaoForamDistribuidasIgualmente() {
+		Instrutor instrutor1 = new Instrutor("Instrutor A", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
+		Instrutor instrutor2 = new Instrutor("Instrutor B", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
+		Instrutor instrutor3 = new Instrutor("Instrutor C", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), false);
+		Instrutor instrutor4 = new Instrutor("Instrutor D", Arrays.asList("Curso 1"), Arrays.asList(Periodo.INTEGRAL),
+				Arrays.asList(Periodo.INTEGRAL), false, Collections.emptyList(), true);
+
+		List<Instrutor> instrutores = new ArrayList<>();
+		instrutores.add(instrutor1);
+		instrutores.add(instrutor2);
+		instrutores.add(instrutor3);
+		instrutores.add(instrutor4);
+
+		List<Curso> cursos = Arrays.asList(new Curso("Curso 1", 40));
+
+		List<Turma> turmas = new ArrayList<>();
+		Turma turma1 = new Turma("Curso 1", Periodo.INTEGRAL,
+				Arrays.asList(LocalDate.of(2018, 11, 26), LocalDate.of(2018, 11, 27), LocalDate.of(2018, 11, 28),
+						LocalDate.of(2018, 11, 29), LocalDate.of(2018, 11, 30)),
+				false, Collections.emptyList());
+		Turma turma2 = new Turma("Curso 1", Periodo.INTEGRAL,
+				Arrays.asList(LocalDate.of(2018, 12, 3), LocalDate.of(2018, 12, 4), LocalDate.of(2018, 12, 5),
+						LocalDate.of(2018, 12, 6), LocalDate.of(2018, 12, 7)),
+				false, Collections.emptyList());
+		Turma turma3 = new Turma("Curso 1", Periodo.INTEGRAL,
+				Arrays.asList(LocalDate.of(2018, 12, 10), LocalDate.of(2018, 12, 11), LocalDate.of(2018, 12, 12),
+						LocalDate.of(2018, 12, 13), LocalDate.of(2018, 12, 14)),
+				false, Collections.emptyList());
+		turmas.add(turma1);
+		turmas.add(turma2);
+		turmas.add(turma3);
+
+		String nomeDaRegra = "horas de aulas não foram distribuídas igualmente";
+		AlocacaoDeInstrutores alocacao = new AlocacaoDeInstrutores(turmas, instrutores, cursos, 120, 3);
+
+		// Alocação vazia
+		verificador.assertSoftWeight(nomeDaRegra, 0, alocacao);
+
+		// Dois instrutores dividindo as aulas, carga distribuída igualmente
+		turma1.setInstrutor(instrutor1);
+		turma2.setInstrutor(instrutor2);
+		turma3.setInstrutor(instrutor3);
+		verificador.assertSoftWeight(nomeDaRegra, 0, alocacao);
+
+		// Um instrutor para todas aulas, 120 horas de diferença de carga horária
+		turma2.setInstrutor(instrutor1);
+		turma3.setInstrutor(instrutor1);
+		verificador.assertSoftWeight(nomeDaRegra, -120, alocacao);
+
+		// Um instrutor pega 80 horas, outro pega 40 horas e o último pega 0 horas. Aqui seriam 80 horas de diferença
+		turma2.setInstrutor(instrutor1);
+		turma3.setInstrutor(instrutor2);
+		verificador.assertSoftWeight(nomeDaRegra, -80, alocacao);
+		
+		// Um instrutor externo para todas aulas, sem problemas
+		turma1.setInstrutor(instrutor4);
+		turma2.setInstrutor(instrutor4);
+		turma3.setInstrutor(instrutor4);
+		verificador.assertSoftWeight(nomeDaRegra, 0, alocacao);
+	}
 }

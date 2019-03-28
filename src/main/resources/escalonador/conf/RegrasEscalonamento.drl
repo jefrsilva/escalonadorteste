@@ -9,6 +9,7 @@ import br.com.caelum.escalonadorteste.modelo.Turma
 import br.com.caelum.escalonadorteste.modelo.Instrutor
 import br.com.caelum.escalonadorteste.modelo.Curso
 import br.com.caelum.escalonadorteste.modelo.Periodo
+import br.com.caelum.escalonadorteste.modelo.TotalDeHoras
 
 import java.util.ArrayList
 
@@ -109,4 +110,22 @@ rule "instrutor está restrito para a turma"
 		Turma($instrutor : instrutor != null, instrutorEstaRestrito($instrutor))
 	then
 		scoreHolder.penalize(kcontext);
+end
+
+rule "total de horas por instrutor"
+	when
+		$parametros : ParametrosDeEscalonamento()
+		$instrutor : Instrutor(!isExterno())
+		accumulate($turma : Turma(instrutor == $instrutor) and $curso : Curso(codigo == $turma.codigoCurso), $totalDeHoras : sum($curso.getCargaHoraria())) 
+	then
+		insert(new TotalDeHoras($instrutor, $totalDeHoras));
+end
+
+rule "horas de aulas não foram distribuídas igualmente" salience -100
+	when
+		accumulate($totalDeHoras : TotalDeHoras(),
+			$maxHoras : max($totalDeHoras.getHoras()),
+			$minHoras : min($totalDeHoras.getHoras()))
+	then
+		scoreHolder.penalize(kcontext, $maxHoras.intValue() - $minHoras.intValue());
 end

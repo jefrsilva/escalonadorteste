@@ -42,6 +42,9 @@ public class ParametrosDeEscalonamento {
 	
 	@ConstraintWeight("instrutor está restrito para a turma")
 	private HardSoftScore instrutorEstaRestritoParaATurma = HardSoftScore.ofHard(10);
+	
+	@ConstraintWeight("horas de aulas não foram distribuídas igualmente")
+	private HardSoftScore horasDeAulaNaoForamDistribuidasIgualmente = HardSoftScore.ofSoft(1);
 
 	private int numeroMaximoDeHorasPorInstrutor;
 	private int numeroMaximoDeTurmasSeguidas;
