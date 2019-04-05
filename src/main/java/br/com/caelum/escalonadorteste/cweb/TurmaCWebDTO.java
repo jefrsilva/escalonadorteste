@@ -1,23 +1,22 @@
 package br.com.caelum.escalonadorteste.cweb;
 
-import java.time.LocalDate;
 import java.util.List;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class TurmaCWebDTO {
 
 	private Integer id;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
-	private LocalDate primeiroDia;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
-	private LocalDate ultimoDia;
-	private String horario;
-	private String nomesInstrutores;
-	private String codigoCurso;
-	private String cidade;
-	private boolean incompany;
-	private List<String> instrutoresRestritos;
+
+	private String codigo;
+
+	private String periodo;
+
+	private String sala;
+
+	private boolean viagem;
+
+	private List<String> dias;
+
+	private String instrutor;
 
 	public Integer getId() {
 		return id;
@@ -27,67 +26,52 @@ public class TurmaCWebDTO {
 		this.id = id;
 	}
 
-	public LocalDate getPrimeiroDia() {
-		return primeiroDia;
+	public String getCodigo() {
+		return codigo;
 	}
 
-	public void setPrimeiroDia(LocalDate primeiroDia) {
-		this.primeiroDia = primeiroDia;
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
 	}
 
-	public LocalDate getUltimoDia() {
-		return ultimoDia;
+	public String getPeriodo() {
+		return periodo;
 	}
 
-	public void setUltimoDia(LocalDate ultimoDia) {
-		this.ultimoDia = ultimoDia;
+	public void setPeriodo(String periodo) {
+		this.periodo = periodo;
 	}
 
-	public String getHorario() {
-		return horario;
+	public String getSala() {
+		return sala;
 	}
 
-	public void setHorario(String horario) {
-		this.horario = horario;
+	public void setSala(String sala) {
+		this.sala = sala;
 	}
 
-	public String getNomesInstrutores() {
-		return nomesInstrutores;
+	public boolean isViagem() {
+		return viagem;
 	}
 
-	public void setNomesInstrutores(String nomesInstrutores) {
-		this.nomesInstrutores = nomesInstrutores;
+	public void setViagem(boolean viagem) {
+		this.viagem = viagem;
 	}
 
-	public String getCodigoCurso() {
-		return codigoCurso;
+	public List<String> getDias() {
+		return dias;
 	}
 
-	public void setCodigoCurso(String codigoCurso) {
-		this.codigoCurso = codigoCurso;
+	public void setDias(List<String> dias) {
+		this.dias = dias;
 	}
 
-	public String getCidade() {
-		return cidade;
+	public String getInstrutor() {
+		return instrutor;
 	}
 
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
+	public void setInstrutor(String instrutor) {
+		this.instrutor = instrutor;
 	}
 
-	public boolean isIncompany() {
-		return incompany;
-	}
-
-	public void setIncompany(boolean incompany) {
-		this.incompany = incompany;
-	}
-
-	public List<String> getInstrutoresRestritos() {
-		return instrutoresRestritos;
-	}
-
-	public void setInstrutoresRestritos(List<String> instrutoresRestritos) {
-		this.instrutoresRestritos = instrutoresRestritos;
-	}
 }

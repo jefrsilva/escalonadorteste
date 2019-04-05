@@ -7,6 +7,9 @@ import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 @ConstraintConfiguration(constraintPackage = "escalonador.parametros")
 public class ParametrosDeEscalonamento {
 	
+	@ConstraintWeight("não pode alocar externo")
+	private HardSoftScore naoPodeAlocarExterno = HardSoftScore.ofHard(1000);
+	
 	@ConstraintWeight("não sabe dar o curso")
 	private HardSoftScore naoSabeDarOCurso = HardSoftScore.ofHard(10);
 	
@@ -41,7 +44,7 @@ public class ParametrosDeEscalonamento {
 	private HardSoftScore aulaDeSabadoDuranteOuAposViagem = HardSoftScore.ofHard(10);
 	
 	@ConstraintWeight("instrutor está restrito para a turma")
-	private HardSoftScore instrutorEstaRestritoParaATurma = HardSoftScore.ofHard(10);
+	private HardSoftScore instrutorEstaRestritoParaATurma = HardSoftScore.ofHard(1000);
 	
 	@ConstraintWeight("horas de aulas não foram distribuídas igualmente")
 	private HardSoftScore horasDeAulaNaoForamDistribuidasIgualmente = HardSoftScore.ofSoft(1);

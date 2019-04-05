@@ -1,0 +1,1256 @@
+[
+  {
+    "id": 8181,
+    "codigo": "FJ-22",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 141",
+    "viagem": false,
+    "instrutor": "Ana Losnak",
+    "dias": [
+      "25/03/2019",
+      "26/03/2019",
+      "27/03/2019",
+      "28/03/2019"
+    ]
+  },
+  {
+    "id": 8193,
+    "codigo": "WD-47",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "sala 131",
+    "viagem": false,
+    "instrutor": "Jhonatan Rosa Jacinto",
+    "dias": [
+      "25/03/2019",
+      "26/03/2019",
+      "27/03/2019",
+      "28/03/2019"
+    ]
+  },
+  {
+    "id": 8202,
+    "codigo": "FJ-21",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "instrutor": "Lucas Alessandro Furlaneto Silvério",
+    "dias": [
+      "25/03/2019",
+      "26/03/2019",
+      "27/03/2019",
+      "28/03/2019",
+      "29/03/2019",
+      "01/04/2019",
+      "02/04/2019",
+      "03/04/2019",
+      "04/04/2019",
+      "05/04/2019"
+    ]
+  },
+  {
+    "id": 8206,
+    "codigo": "WD-47",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 55",
+    "viagem": false,
+    "instrutor": "Italo Moraes Santiago",
+    "dias": [
+      "25/03/2019",
+      "26/03/2019",
+      "27/03/2019",
+      "28/03/2019",
+      "01/04/2019",
+      "02/04/2019",
+      "03/04/2019",
+      "04/04/2019"
+    ]
+  },
+  {
+    "id": 8214,
+    "codigo": "FN-23",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "instrutor": "Felipe Ribeiro Montino",
+    "dias": [
+      "25/03/2019",
+      "26/03/2019",
+      "27/03/2019",
+      "28/03/2019",
+      "29/03/2019",
+      "01/04/2019",
+      "02/04/2019",
+      "03/04/2019",
+      "04/04/2019",
+      "05/04/2019"
+    ]
+  },
+  {
+    "id": 8223,
+    "codigo": "FJ-36",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "instrutor": "Fernando W S Furtado",
+    "dias": [
+      "25/03/2019",
+      "26/03/2019",
+      "27/03/2019",
+      "28/03/2019",
+      "29/03/2019"
+    ]
+  },
+  {
+    "id": 8385,
+    "codigo": "PI-16",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Carla de Bona",
+    "dias": [
+      "27/03/2019",
+      "28/03/2019",
+      "29/03/2019"
+    ]
+  },
+  {
+    "id": 8177,
+    "codigo": "WD-41",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Lucas César",
+    "dias": [
+      "30/03/2019",
+      "06/04/2019",
+      "13/04/2019",
+      "20/04/2019",
+      "27/04/2019"
+    ]
+  },
+  {
+    "id": 8212,
+    "codigo": "FJ-59",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "instrutor": "Matheus Vidal Brandino",
+    "dias": [
+      "01/04/2019",
+      "02/04/2019",
+      "03/04/2019",
+      "04/04/2019",
+      "05/04/2019",
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019"
+    ]
+  },
+  {
+    "id": 8169,
+    "codigo": "FJ-27",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "sala 131",
+    "viagem": false,
+    "instrutor": "Fernando W S Furtado",
+    "dias": [
+      "06/04/2019",
+      "13/04/2019",
+      "20/04/2019",
+      "27/04/2019",
+      "04/05/2019"
+    ]
+  },
+  {
+    "id": 8195,
+    "codigo": "FJ-38",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 55",
+    "viagem": false,
+    "instrutor": "Lucas Félix Sampaio",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019"
+    ]
+  },
+  {
+    "id": 8203,
+    "codigo": "FJ-22",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 141",
+    "viagem": false,
+    "instrutor": "Lucas Alessandro Furlaneto Silvério",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019",
+      "15/04/2019",
+      "16/04/2019",
+      "17/04/2019",
+      "18/04/2019"
+    ]
+  },
+  {
+    "id": 8217,
+    "codigo": "JS-45",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Vanessa Martinez Tonini",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019",
+      "12/04/2019",
+      "15/04/2019",
+      "16/04/2019",
+      "17/04/2019",
+      "18/04/2019",
+      "19/04/2019"
+    ]
+  },
+  {
+    "id": 8233,
+    "codigo": "WD-41",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Wanderson Macêdo Sabino",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019",
+      "12/04/2019"
+    ]
+  },
+  {
+    "id": 8270,
+    "codigo": "FJ-27",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "instrutor": "Thais Thomazini André",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019",
+      "12/04/2019"
+    ]
+  },
+  {
+    "id": 8288,
+    "codigo": "FJ-11",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "instrutor": "Rita de Cassia Freitas Cury",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019",
+      "12/04/2019"
+    ]
+  },
+  {
+    "id": 8297,
+    "codigo": "WD-01",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "instrutor": "Jhonatan Rosa Jacinto",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019"
+    ]
+  },
+  {
+    "id": 8310,
+    "codigo": "JS-45",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "instrutor": "Mário Souto",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019",
+      "12/04/2019"
+    ]
+  },
+  {
+    "id": 8347,
+    "codigo": "WD-01",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "sala 131",
+    "viagem": false,
+    "instrutor": "Carlos Alberto Savi",
+    "dias": [
+      "08/04/2019",
+      "09/04/2019",
+      "10/04/2019",
+      "11/04/2019",
+      "15/04/2019",
+      "16/04/2019",
+      "17/04/2019",
+      "18/04/2019"
+    ]
+  },
+  {
+    "id": 8164,
+    "codigo": "FJ-21",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 55",
+    "viagem": false,
+    "instrutor": "Leonardo Inácio da Silva",
+    "dias": [
+      "13/04/2019",
+      "20/04/2019",
+      "27/04/2019",
+      "04/05/2019",
+      "11/05/2019"
+    ]
+  },
+  {
+    "id": 8289,
+    "codigo": "FJ-21",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 55",
+    "viagem": false,
+    "dias": [
+      "15/04/2019",
+      "16/04/2019",
+      "17/04/2019",
+      "18/04/2019",
+      "19/04/2019"
+    ]
+  },
+  {
+    "id": 8162,
+    "codigo": "WD-47",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "instrutor": "Italo Moraes Santiago",
+    "dias": [
+      "20/04/2019",
+      "27/04/2019",
+      "04/05/2019",
+      "11/05/2019"
+    ]
+  },
+  {
+    "id": 8168,
+    "codigo": "FJ-38",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "dias": [
+      "20/04/2019",
+      "27/04/2019",
+      "04/05/2019",
+      "11/05/2019"
+    ]
+  },
+  {
+    "id": 8327,
+    "codigo": "WD-43",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "instrutor": "Leonardo Souza",
+    "dias": [
+      "20/04/2019",
+      "27/04/2019",
+      "04/05/2019",
+      "11/05/2019",
+      "18/05/2019"
+    ]
+  },
+  {
+    "id": 8329,
+    "codigo": "WD-01",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "instrutor": "Carlos Alberto Savi",
+    "dias": [
+      "20/04/2019",
+      "27/04/2019",
+      "04/05/2019",
+      "11/05/2019"
+    ]
+  },
+  {
+    "id": 8290,
+    "codigo": "FJ-22",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "dias": [
+      "22/04/2019",
+      "23/04/2019",
+      "24/04/2019",
+      "25/04/2019"
+    ]
+  },
+  {
+    "id": 8298,
+    "codigo": "WD-43",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "dias": [
+      "22/04/2019",
+      "23/04/2019",
+      "24/04/2019",
+      "25/04/2019",
+      "26/04/2019"
+    ]
+  },
+  {
+    "id": 8324,
+    "codigo": "JS-12",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "sala 131",
+    "viagem": false,
+    "instrutor": "Artur Diniz Adam",
+    "dias": [
+      "22/04/2019",
+      "23/04/2019",
+      "24/04/2019",
+      "25/04/2019",
+      "26/04/2019"
+    ]
+  },
+  {
+    "id": 8353,
+    "codigo": "FJ-11",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "instrutor": "Rita de Cassia Freitas Cury",
+    "dias": [
+      "22/04/2019",
+      "23/04/2019",
+      "24/04/2019",
+      "25/04/2019",
+      "26/04/2019",
+      "29/04/2019",
+      "30/04/2019",
+      "01/05/2019",
+      "02/05/2019",
+      "03/05/2019"
+    ]
+  },
+  {
+    "id": 8358,
+    "codigo": "FJ-27",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 141",
+    "viagem": false,
+    "dias": [
+      "22/04/2019",
+      "23/04/2019",
+      "24/04/2019",
+      "25/04/2019",
+      "26/04/2019",
+      "29/04/2019",
+      "30/04/2019",
+      "01/05/2019",
+      "02/05/2019",
+      "03/05/2019"
+    ]
+  },
+  {
+    "id": 8370,
+    "codigo": "JS-46",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "dias": [
+      "22/04/2019",
+      "23/04/2019",
+      "24/04/2019",
+      "25/04/2019",
+      "29/04/2019",
+      "30/04/2019",
+      "01/05/2019",
+      "02/05/2019"
+    ],
+    "instrutor": "Mário Souto"
+  },
+  {
+    "id": 8386,
+    "codigo": "PI-16",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Carla de Bona",
+    "dias": [
+      "24/04/2019",
+      "25/04/2019",
+      "26/04/2019"
+    ]
+  },
+  {
+    "id": 8299,
+    "codigo": "WD-47",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "instrutor": "Jhonatan Rosa Jacinto",
+    "dias": [
+      "29/04/2019",
+      "30/04/2019",
+      "02/05/2019",
+      "03/05/2019"
+    ]
+  },
+  {
+    "id": 82991,
+    "codigo": "JS-45",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "dias": [
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019"
+    ]
+  },
+  {
+    "id": 8315,
+    "codigo": "FN-23",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "sala 131",
+    "viagem": false,
+    "dias": [
+      "29/04/2019",
+      "30/04/2019",
+      "01/05/2019",
+      "02/05/2019",
+      "03/05/2019"
+    ]
+  },
+  {
+    "id": 8384,
+    "codigo": "PI-15",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Carla de Bona",
+    "dias": [
+      "01/05/2019",
+      "02/05/2019",
+      "03/05/2019"
+    ]
+  },
+  {
+    "id": 8291,
+    "codigo": "FJ-11",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Rita de Cassia Freitas Cury",
+    "dias": [
+      "06/05/2019",
+      "07/05/2019",
+      "08/05/2019",
+      "09/05/2019",
+      "10/05/2019"
+    ]
+  },
+  {
+    "id": 8323,
+    "codigo": "FJ-25",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "dias": [
+      "06/05/2019",
+      "07/05/2019",
+      "08/05/2019",
+      "09/05/2019",
+      "10/05/2019"
+    ]
+  },
+  {
+    "id": 8354,
+    "codigo": "FJ-21",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "dias": [
+      "06/05/2019",
+      "07/05/2019",
+      "08/05/2019",
+      "09/05/2019",
+      "10/05/2019",
+      "13/05/2019",
+      "14/05/2019",
+      "15/05/2019",
+      "16/05/2019",
+      "17/05/2019"
+    ]
+  },
+  {
+    "id": 8372,
+    "codigo": "JS-56",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "dias": [
+      "06/05/2019",
+      "07/05/2019",
+      "08/05/2019",
+      "09/05/2019",
+      "13/05/2019",
+      "14/05/2019",
+      "15/05/2019",
+      "16/05/2019"
+    ],
+    "instrutor": "Newton Beck"
+  },
+  {
+    "id": 8387,
+    "codigo": "PI-15",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Carla de Bona",
+    "dias": [
+      "06/05/2019",
+      "07/05/2019",
+      "08/05/2019",
+      "09/05/2019",
+      "10/05/2019"
+    ]
+  },
+  {
+    "id": 8276,
+    "codigo": "PM-83",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Robson Pantolfi",
+    "dias": [
+      "08/05/2019",
+      "09/05/2019",
+      "10/05/2019"
+    ]
+  },
+  {
+    "id": 8337,
+    "codigo": "JS-46",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 141",
+    "viagem": false,
+    "dias": [
+      "11/05/2019",
+      "18/05/2019",
+      "25/05/2019",
+      "01/06/2019"
+    ]
+  },
+  {
+    "id": 8292,
+    "codigo": "FJ-21",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Fellipe Souto Sampaio",
+    "dias": [
+      "13/05/2019",
+      "14/05/2019",
+      "15/05/2019",
+      "16/05/2019",
+      "17/05/2019"
+    ]
+  },
+  {
+    "id": 8369,
+    "codigo": "JS-35",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 141",
+    "viagem": false,
+    "dias": [
+      "13/05/2019",
+      "14/05/2019",
+      "15/05/2019",
+      "16/05/2019",
+      "17/05/2019"
+    ]
+  },
+  {
+    "id": 8165,
+    "codigo": "FJ-22",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 55",
+    "viagem": false,
+    "instrutor": "Leonardo Inácio da Silva",
+    "dias": [
+      "18/05/2019",
+      "25/05/2019",
+      "01/06/2019",
+      "08/06/2019"
+    ]
+  },
+  {
+    "id": 8330,
+    "codigo": "WD-43",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "dias": [
+      "18/05/2019",
+      "25/05/2019",
+      "01/06/2019",
+      "08/06/2019",
+      "15/06/2019"
+    ]
+  },
+  {
+    "id": 8334,
+    "codigo": "FJ-11",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "instrutor": "Rafael Rollo",
+    "dias": [
+      "18/05/2019",
+      "25/05/2019",
+      "01/06/2019",
+      "08/06/2019",
+      "15/06/2019"
+    ]
+  },
+  {
+    "id": 8338,
+    "codigo": "FJ-57",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "instrutor": "Matheus Vidal Brandino",
+    "dias": [
+      "18/05/2019",
+      "25/05/2019",
+      "01/06/2019",
+      "08/06/2019",
+      "15/06/2019"
+    ]
+  },
+  {
+    "id": 8312,
+    "codigo": "JS-46",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "sala 131",
+    "viagem": false,
+    "dias": [
+      "20/05/2019",
+      "21/05/2019",
+      "22/05/2019",
+      "23/05/2019"
+    ]
+  },
+  {
+    "id": 8350,
+    "codigo": "WD-01",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Carlos Alberto Savi",
+    "dias": [
+      "20/05/2019",
+      "21/05/2019",
+      "22/05/2019",
+      "23/05/2019",
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019",
+      "30/05/2019"
+    ]
+  },
+  {
+    "id": 8355,
+    "codigo": "FJ-22",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "dias": [
+      "20/05/2019",
+      "21/05/2019",
+      "22/05/2019",
+      "23/05/2019",
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019",
+      "30/05/2019"
+    ]
+  },
+  {
+    "id": 8368,
+    "codigo": "FJ-57",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "dias": [
+      "20/05/2019",
+      "21/05/2019",
+      "22/05/2019",
+      "23/05/2019",
+      "24/05/2019",
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019",
+      "30/05/2019",
+      "31/05/2019"
+    ]
+  },
+  {
+    "id": 8371,
+    "codigo": "JS-46",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "dias": [
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019",
+      "30/05/2019",
+      "03/06/2019",
+      "04/06/2019",
+      "05/06/2019",
+      "06/06/2019"
+    ],
+    "instrutor": "Artur Diniz Adam"
+  },
+  {
+    "id": 8328,
+    "codigo": "WD-47",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "instrutor": "Leonardo Souza",
+    "dias": [
+      "25/05/2019",
+      "01/06/2019",
+      "08/06/2019",
+      "15/06/2019"
+    ]
+  },
+  {
+    "id": 8136,
+    "codigo": "SE-39",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 141",
+    "viagem": false,
+    "instrutor": "Rodrigo da Silva Ferreira",
+    "dias": [
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019"
+    ]
+  },
+  {
+    "id": 82251,
+    "codigo": "JS-45",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "dias": [
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019",
+      "30/05/2019",
+      "31/05/2019"
+    ]
+  },
+  {
+    "id": 8225,
+    "codigo": "FJ-91",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "dias": [
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019",
+      "30/05/2019",
+      "31/05/2019"
+    ],
+    "instrutor": "Alefh Sousa"
+  },
+  {
+    "id": 8388,
+    "codigo": "PI-17",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "dias": [
+      "27/05/2019",
+      "28/05/2019",
+      "29/05/2019",
+      "30/05/2019",
+      "31/05/2019"
+    ],
+    "instrutor": "Luísa Aguirra"
+  },
+  {
+    "id": 8333,
+    "codigo": "FN-23",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "instrutor": "Henrique Lopes de Souza",
+    "dias": [
+      "01/06/2019",
+      "08/06/2019",
+      "15/06/2019",
+      "22/06/2019",
+      "29/06/2019"
+    ]
+  },
+  {
+    "id": 8294,
+    "codigo": "FJ-11",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Rita de Cassia Freitas Cury",
+    "dias": [
+      "03/06/2019",
+      "04/06/2019",
+      "05/06/2019",
+      "06/06/2019",
+      "07/06/2019"
+    ]
+  },
+  {
+    "id": 8303,
+    "codigo": "WD-01",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "instrutor": "Jhonatan Rosa Jacinto",
+    "dias": [
+      "03/06/2019",
+      "04/06/2019",
+      "05/06/2019",
+      "06/06/2019"
+    ]
+  },
+  {
+    "id": 8308,
+    "codigo": "FJ-27",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 55",
+    "viagem": false,
+    "dias": [
+      "03/06/2019",
+      "04/06/2019",
+      "05/06/2019",
+      "06/06/2019",
+      "07/06/2019"
+    ]
+  },
+  {
+    "id": 8351,
+    "codigo": "WD-43",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Leonardo Souza",
+    "dias": [
+      "03/06/2019",
+      "04/06/2019",
+      "05/06/2019",
+      "06/06/2019",
+      "07/06/2019",
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019"
+    ]
+  },
+  {
+    "id": 8356,
+    "codigo": "FJ-11",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "instrutor": "Rita de Cassia Freitas Cury",
+    "dias": [
+      "03/06/2019",
+      "04/06/2019",
+      "05/06/2019",
+      "06/06/2019",
+      "07/06/2019",
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019"
+    ]
+  },
+  {
+    "id": 8363,
+    "codigo": "FN-13",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "instrutor": "Felipe Ribeiro Montino",
+    "dias": [
+      "03/06/2019",
+      "04/06/2019",
+      "05/06/2019",
+      "06/06/2019",
+      "07/06/2019",
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019"
+    ]
+  },
+  {
+    "id": 8295,
+    "codigo": "FJ-21",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Fellipe Souto Sampaio",
+    "dias": [
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019"
+    ]
+  },
+  {
+    "id": 8316,
+    "codigo": "FN-13",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "dias": [
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019"
+    ]
+  },
+  {
+    "id": 8326,
+    "codigo": "JS-35",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "dias": [
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019"
+    ]
+  },
+  {
+    "id": 8376,
+    "codigo": "FJ-36",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "instrutor": "Fernando W S Furtado",
+    "dias": [
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019",
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019",
+      "21/06/2019"
+    ]
+  },
+  {
+    "id": 8379,
+    "codigo": "WD-41",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "instrutor": "Lucas César",
+    "dias": [
+      "10/06/2019",
+      "11/06/2019",
+      "12/06/2019",
+      "13/06/2019",
+      "14/06/2019",
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019",
+      "21/06/2019"
+    ]
+  },
+  {
+    "id": 8341,
+    "codigo": "JS-35",
+    "periodo": "Sábado (9:00 às 17:00)",
+    "sala": "sala 131",
+    "viagem": false,
+    "dias": [
+      "15/06/2019",
+      "22/06/2019",
+      "29/06/2019"
+    ]
+  },
+  {
+    "id": 8296,
+    "codigo": "FJ-22",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "dias": [
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019"
+    ],
+    "instrutor": "Thais Thomazini André"
+  },
+  {
+    "id": 8322,
+    "codigo": "FJ-57",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "dias": [
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019",
+      "21/06/2019"
+    ],
+    "instrutor": "Wanderson Macêdo Sabino"
+  },
+  {
+    "id": 8352,
+    "codigo": "WD-47",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 114",
+    "viagem": false,
+    "instrutor": "Leonardo Souza",
+    "dias": [
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019",
+      "24/06/2019",
+      "25/06/2019",
+      "26/06/2019",
+      "27/06/2019"
+    ]
+  },
+  {
+    "id": 8357,
+    "codigo": "FJ-21",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 113",
+    "viagem": false,
+    "instrutor": "Leonardo Inácio da Silva",
+    "dias": [
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019",
+      "21/06/2019",
+      "24/06/2019",
+      "25/06/2019",
+      "26/06/2019",
+      "27/06/2019",
+      "28/06/2019"
+    ]
+  },
+  {
+    "id": 8364,
+    "codigo": "FN-23",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 126",
+    "viagem": false,
+    "instrutor": "Henrique Lopes de Souza",
+    "dias": [
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019",
+      "21/06/2019",
+      "24/06/2019",
+      "25/06/2019",
+      "26/06/2019",
+      "27/06/2019",
+      "28/06/2019"
+    ]
+  },
+  {
+    "id": 8374,
+    "codigo": "JS-12",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Sala 133",
+    "viagem": false,
+    "dias": [
+      "17/06/2019",
+      "18/06/2019",
+      "19/06/2019",
+      "20/06/2019",
+      "21/06/2019",
+      "24/06/2019",
+      "25/06/2019",
+      "26/06/2019",
+      "27/06/2019",
+      "28/06/2019"
+    ]
+  },
+  {
+    "id": 8317,
+    "codigo": "FN-23",
+    "periodo": "Integral (9:00 às 17:00)",
+    "sala": "Sala 144",
+    "viagem": false,
+    "dias": [
+      "24/06/2019",
+      "25/06/2019",
+      "26/06/2019",
+      "27/06/2019",
+      "28/06/2019"
+    ]
+  },
+  {
+    "id": 8380,
+    "codigo": "PM-83",
+    "periodo": "Noturno (19:00 às 23:00)",
+    "sala": "Auditório SP",
+    "viagem": false,
+    "dias": [
+      "24/06/2019",
+      "25/06/2019",
+      "26/06/2019",
+      "27/06/2019",
+      "28/06/2019"
+    ],
+    "instrutor": "Robson Pantolfi"
+  }
+]

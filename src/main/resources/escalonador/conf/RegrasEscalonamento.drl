@@ -17,6 +17,13 @@ import accumulate br.com.caelum.escalonadorteste.funcao.AcumuladorDeMaximoDeTurm
 
 global HardSoftScoreHolder scoreHolder;
 
+rule "não pode alocar externo"
+	when
+		Turma(instrutor != null, instrutorPlanejado == null, instrutor.isExterno())
+	then
+		scoreHolder.penalize(kcontext);
+end
+
 rule "não sabe dar o curso"
     when
     	Turma(instrutor != null, !instrutor.sabeDarOCurso(this))

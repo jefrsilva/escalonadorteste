@@ -16,6 +16,24 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
+	 	"indisponibilidades": [
+	 		{
+	 			"inicio": "2019-04-16T00:00",
+	 			"termino": "2019-04-16T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-05-11T00:00",
+	 			"termino": "2019-05-11T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-05-15T00:00",
+	 			"termino": "2019-05-15T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-06-10T00:00",
+	 			"termino": "2019-06-20T23:59"
+	 		}
+	 	],
 	 	"podeViajar": "true",
 	 	"externo": "false"
 	},
@@ -36,13 +54,37 @@
 	 		{
 	 			"inicio": "2019-02-20T00:00",
 	 			"termino": "2019-03-01T23:59"
-	 		}
+	 		},
+	 		{
+	 			"inicio": "2019-04-22T00:00",
+	 			"termino": "2019-04-26T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-05-11T00:00",
+	 			"termino": "2019-05-11T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-05-18T00:00",
+	 			"termino": "2019-05-18T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-05-20T00:00",
+	 			"termino": "2019-05-20T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-06-05T00:00",
+	 			"termino": "2019-06-19T23:59"
+	 		},
+	 		{
+	 			"inicio": "2019-06-24T00:00",
+	 			"termino": "2019-06-24T23:59"
+	 		}	 		
 	 	],
 	 	"podeViajar": "true",
 	 	"externo": "false"
 	},
 	{
-		"nome": "Artur Adam",
+		"nome": "Artur Diniz Adam",
 	 	"cursos": [
 	 		"WD-01",
 	 		"WD-43",
@@ -62,6 +104,21 @@
 	 	"externo": "false"
 	},
 	{
+		"nome": "Fellipe Souto Sampaio",
+	 	"cursos": [
+	 		"FJ-21"
+	 	],
+	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true",
+	 	"externo": "true"
+	},
+	{
 		"nome": "Gabriel Ferreira",
 	 	"cursos": [
 	 		"FN-13",
@@ -78,7 +135,7 @@
 	 	"externo": "false"
 	},
 	{
-		"nome": "Lucas Sampaio",
+		"nome": "Lucas Félix Sampaio",
 	 	"cursos": [
 	 		"FJ-11",
 	 		"FJ-21",
@@ -103,7 +160,22 @@
 	 	"externo": "false"
 	},
 	{
-		"nome": "Matheus Marcus",
+		"nome": "Luísa Aguirra",
+	 	"cursos": [
+	 		"PI-17"
+	 	],
+	 	"periodos": [
+	 		"MANHA",
+	 		"TARDE",
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "true",
+	 	"externo": "true"
+	},
+	{
+		"nome": "Matheus Alberto Marcus",
 	 	"cursos": [
 	 		"WD-43"
 	 	],
@@ -134,11 +206,17 @@
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
+	 	"indisponibilidades": [
+	 		{
+	 			"inicio": "2019-06-20T00:00",
+	 			"termino": "2019-06-23T23:59"
+	 		}
+	 	],
 	 	"podeViajar": "true",
 	 	"externo": "false"
 	},
 	{
-		"nome": "Thais André",
+		"nome": "Thais Thomazini André",
 	 	"cursos": [
 	 		"FJ-11",
 	 		"FJ-21",
@@ -156,7 +234,7 @@
 	 	"externo": "false"
 	},
 	{
-		"nome": "Vanessa Tonini",
+		"nome": "Vanessa Martinez Tonini",
 	 	"cursos": [
 	 		"WD-43",
 	 		"WD-47",
@@ -175,7 +253,7 @@
 	 	"externo": "false"
 	},
 	{
-		"nome": "Wanderson Sabino",
+		"nome": "Wanderson Macêdo Sabino",
 	 	"cursos": [
 	 		"WD-41",
 	 		"JS-45-20hs"
@@ -198,7 +276,8 @@
 	 	"cursos": [
  			"FJ-22",
 	 		"FJ-27",
-	 		"FJ-36"
+	 		"FJ-36",
+	 		"FJ-91"
 	 	],
 	 	"periodos": [
 	 		"INTEGRAL",
@@ -209,21 +288,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Allan Romanato",
-	 	"cursos": [
-	 		"FJ-11",
-	 		"FJ-21",
-	 		"FJ-22"
-	 	],
-	 	"periodos": [
-	 		"NOTURNO",
-	 		"SABADO"
-	 	],
-	 	"podeViajar": "false",
-	 	"externo": "true"
-	},
-	{
-		"nome": "Anderson Galeote",
+		"nome": "Anderson dos Santos Galeote",
 	 	"cursos": [
 	 		"JS-45-20hs",
 	 		"JS-45"
@@ -236,8 +301,24 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Carlos Savi",
+		"nome": "Carla de Bona",
 	 	"cursos": [
+	 		"WD-41",
+	 		"PI-15",
+	 		"PI-16"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false",
+	 	"externo": "true"
+	},
+	{
+		"nome": "Carlos Alberto Savi",
+	 	"cursos": [
+	 		"WD-01",
 	 		"IP-67"
 	 	],
 	 	"periodos": [
@@ -261,24 +342,33 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Fernando Furtado",
+		"nome": "Felipe Ribeiro Montino",
 	 	"cursos": [
-	 		"FJ-22",
-	 		"FJ-27",
-	 		"FJ-36",
-	 		"FJ-38",
-	 		"FJ-91",
-	 		"IP-67"
+	 		"FN-13",
+	 		"FN-23"
 	 	],
 	 	"periodos": [
 	 		"NOTURNO",
 	 		"SABADO"
 	 	],
-	 	"indisponibilidades": [
-	 		{
- 				"inicio": "2019-02-18T00:00",
- 				"termino": "2025-01-01T00:00"
-	 		}
+	 	"podeViajar": "false",
+	 	"externo": "true"
+	},
+	{
+		"nome": "Fernando W S Furtado",
+	 	"cursos": [
+	 		"FJ-22",
+	 		"FJ-27",
+	 		"FJ-36",
+	 		"FJ-33",
+	 		"FJ-38",
+	 		"FJ-91",
+	 		"IP-67"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL",
+	 		"NOTURNO",
+	 		"SABADO"
 	 	],
 	 	"podeViajar": "false",
 	 	"externo": "true"
@@ -298,7 +388,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Henrique Lopes",
+		"nome": "Henrique Lopes de Souza",
 	 	"cursos": [
 	 		"FN-13",
 	 		"FN-23"
@@ -311,7 +401,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Ítalo Moraes",
+		"nome": "Italo Moraes Santiago",
 	 	"cursos": [
 	 		"WD-47",
 	 		"JS-46"
@@ -324,7 +414,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Jhonatan Jacinto",
+		"nome": "Jhonatan Rosa Jacinto",
 	 	"cursos": [
 	 		"WD-01",
 	 		"WD-47",
@@ -337,6 +427,20 @@
 	 	"podeViajar": "true",
 	 	"externo": "true"
 	},
+	{
+		"nome": "Leonardo Inácio da Silva",
+	 	"cursos": [
+	 		"FJ-11",
+	 		"FJ-21",
+	 		"FJ-22"
+	 	],
+	 	"periodos": [
+	 		"NOTURNO",
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false",
+	 	"externo": "true"
+	},	
 	{
 		"nome": "Leonardo Souza",
 	 	"cursos": [
@@ -353,7 +457,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Letícia Costa",
+		"nome": "Letícia Costa Dias",
 	 	"cursos": [
 	 		"WD-47",
 	 		"JS-46"
@@ -377,9 +481,10 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Lucas Furlaneto",
+		"nome": "Lucas Alessandro Furlaneto Silvério",
 	 	"cursos": [
-	 		"FJ-21"
+	 		"FJ-21",
+	 		"FJ-22"
 	 	],
 	 	"periodos": [
 	 		"NOTURNO",
@@ -389,7 +494,7 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Matheus Brandino",
+		"nome": "Matheus Vidal Brandino",
 	 	"cursos": [
 	 		"FJ-22",
 	 		"FJ-57",
@@ -428,7 +533,21 @@
 	 	"externo": "true"
 	},
 	{
-		"nome": "Rita Cury",
+		"nome": "Rafael Rollo",
+	 	"cursos": [
+	 		"FJ-11",
+	 		"FJ-21",
+	 		"FJ-27",
+	 		"JS-56"
+	 	],
+	 	"periodos": [
+	 		"SABADO"
+	 	],
+	 	"podeViajar": "false",
+	 	"externo": "true"
+	},
+	{
+		"nome": "Rita de Cassia Freitas Cury",
 	 	"cursos": [
 	 		"FJ-11"
 	 	],
@@ -456,7 +575,8 @@
 	{
 		"nome": "Thiago Andrade",
 	 	"cursos": [
-	 		"FJ-11"
+	 		"FJ-11",
+	 		"FJ-22"
 	 	],
 	 	"periodos": [
 	 		"SABADO"
@@ -464,9 +584,8 @@
 	 	"podeViajar": "false",
 	 	"externo": "true"
 	},
-	
 	{
-		"nome": "Rodrigo Ferreira",
+		"nome": "Rodrigo da Silva Ferreira",
 	 	"cursos": [
 	 		"SE-39"
 	 	],
@@ -474,7 +593,18 @@
 	 		"INTEGRAL"
 	 	],
 	 	"podeViajar": "true",
-	 	"externo": "false"
+	 	"externo": "true"
+	},	
+	{
+		"nome": "Alexandre Aquiles",
+	 	"cursos": [
+	 		"FJ-33"
+	 	],
+	 	"periodos": [
+	 		"INTEGRAL"
+	 	],
+	 	"podeViajar": "true",
+	 	"externo": "true"
 	}	
 	
 ]

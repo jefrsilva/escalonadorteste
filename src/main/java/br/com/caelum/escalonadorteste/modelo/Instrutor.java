@@ -17,7 +17,7 @@ public class Instrutor {
 	private List<Periodo> periodosViaveis;
 	
 	@JsonProperty("periodosPreferenciais")
-	private List<Periodo> periodosPreferenciais;
+	private List<Periodo> periodosPreferenciais = new ArrayList<>();
 
 	@JsonProperty("podeViajar")
 	private boolean disponivelParaViagem;
@@ -38,7 +38,11 @@ public class Instrutor {
 		this.nome = nome;
 		this.cursosConhecidos = cursosConhecidos;
 		this.periodosViaveis = periodosViaveis;
-		this.periodosPreferenciais = periodosPreferenciais;
+		if (periodosPreferenciais == null) {
+			this.periodosPreferenciais.addAll(periodosViaveis);
+		} else {
+			this.periodosPreferenciais = periodosPreferenciais;	
+		}
 		this.disponivelParaViagem = disponivelParaViagem;
 		if (datasIndisponiveis != null) {
 			this.datasIndisponiveis = datasIndisponiveis;
